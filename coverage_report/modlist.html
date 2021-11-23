@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="Author" content="<username>"> <meta name="GENERATOR" content="urg/version [en] (platform name) [urg]">
+<title>Unified Coverage Report :: Module List</title>
+<link type="text/css" rel="stylesheet" href="css/.urg.css">
+<link type="text/css" rel="stylesheet" href="css/.treetable.css">
+<link type="text/css" rel="stylesheet" href="css/.layout.css">
+<script type="text/javascript" src="js/.jquery.js"></script>
+<script type="text/javascript" src="js/.jquery-ui.js"></script>
+<script type="text/javascript" src="js/.sortable.js"></script>
+<script type="text/javascript" src="js/.treetable.js"></script>
+<script type="text/javascript" src="js/.colResizable.js"></script>
+<script type="text/javascript" src="js/.layout.js"></script>
+<script type="text/javascript">
+var layout, westLayout, centerLayout;
+$(document).ready(function () {
+  layout = $("body").layout({ 
+    resizable: true,
+    spacing_open: 4,
+    spacing_closed: 4,
+    north: {
+      size: 76
+    },
+    south: {
+      size: 45,
+      initClosed: true
+    }  });
+  $("#hierarchyTable tbody tr").mousedown(function() {
+    $("tr.selected").removeClass("selected");
+    $("td.selected").removeClass("selected");
+    $(this).addClass("selected");
+    $(this).children().addClass("selected");
+  });
+  $("tr[data-tt-id='hierarchyTable_root']").each(function () {
+    $(this).attr("style", "display:none");
+  });
+  $("tr[data-tt-parent-id='hierarchyTable_root']").each(function () {
+    $(this).attr("style", "display:table-row");
+    $("#hierarchyTable").treetable("expandNode", $(this).attr("data-tt-id"));
+  });
+  $("table").colResizable({    liveDrag:true,
+    fixed:false,
+    draggingClass:"dragging"
+  });
+});
+function expandAll() {
+  $("#hierarchyTable").treetable("expandAll");
+}
+function collapseAll() {
+  if ($("tr[data-tt-parent-id='hierarchyTable_root']").length > 0) {
+    $("tr[data-tt-parent-id='hierarchyTable_root']").each(function () {
+      var nodeId = $(this).attr("data-tt-id");
+      var node = $("#hierarchyTable").treetable("node", nodeId);
+      $("#hierarchyTable").treetable("collapseNodeRecursive", node);
+    });
+  } else {
+    $("#hierarchyTable").treetable("collapseAll");
+  }
+}
+</script>
+</head>
+<body><div class="ui-layout-north">
+<div class="logo"></div>
+<center class="pagetitle">Design Module List</center>
+<div align="center"><a href="dashboard.html" ><b>dashboard</b></a> | <a href="hierarchy.html" ><b>hierarchy</b></a> | <a href="modlist.html" ><b>modlist</b></a> | groups | <a href="tests.html" ><b>tests</b></a> | asserts</div>
+
+</div>
+<div class="ui-layout-center">
+<b>Total Module Definition Coverage Summary</b>&nbsp;<br clear=all>
+<table align=left>
+<tr class="sortablehead">
+<td nowrap width=65>SCORE</td><td nowrap width=65>LINE</td><td nowrap width=65>COND</td><td nowrap width=65>TOGGLE</td><td nowrap width=65>FSM</td><td nowrap width=65>BRANCH</td></tr><tr>
+<td class="s8 cl rt"> 80.57</td>
+<td class="s9 cl rt"> 94.51</td>
+<td class="s7 cl rt"> 78.95</td>
+<td class="s9 cl rt"> 90.77</td>
+<td class="s4 cl rt"> 43.75</td>
+<td class="s9 cl rt"> 94.86</td>
+</tr></table><br clear=all>
+<br clear=all>
+Total modules in report: 12<hr>
+<table class="noborder">
+  <tr>
+    <td class="noborder"><input type="button" value="Expand All" onClick="expandAll()"></td>
+    <td class="noborder"><input type="button" value="Collapse All" onClick="collapseAll()"></td>
+  </tr>
+</table>
+<table id="hierarchyTable" border="0" cellpadding="0" cellspacing="0" class="sortable">
+  <thead class="table-header">
+    <tr>
+<th class="alfsrt">NAME</th><th>SCORE</th><th>LINE</th><th>COND</th><th>TOGGLE</th><th>FSM</th><th>BRANCH</th>    </tr>
+  </thead>
+  <tbody>
+    <tr data-tt-id="hierarchyTable_root">
+<td></td><td></td><td></td><td></td><td></td><td></td><td></td>    </tr>
+    <tr data-tt-id="mod_3" data-tt-parent-id="hierarchyTable_root">
+<td class="wordwrap"><a name="tag_top_system"></a>
+<a href="mod3.html" >top_system</a></td>
+<td class="s4 cl rt"> 40.56</td>
+<td class="wht cl rt"></td>
+<td class="wht cl rt"></td>
+<td class="s4 cl rt"><a href="mod3.html#Toggle" > 40.56</a></td>
+<td class="wht cl rt"></td>
+<td class="wht cl rt"></td>
+    </tr>
+    <tr data-tt-id="mod_4" data-tt-parent-id="hierarchyTable_root">
+<td class="wordwrap"><a name="tag_controller_fsm"></a>
+<a href="mod4.html" >controller_fsm</a></td>
+<td class="s7 cl rt"> 75.82</td>
+<td class="s10 cl rt"><a href="mod4.html#Line" >100.00</a></td>
+<td class="s7 cl rt"><a href="mod4.html#Cond" > 71.19</a></td>
+<td class="s7 cl rt"><a href="mod4.html#Toggle" > 70.06</a></td>
+<td class="s4 cl rt"><a href="mod4.html#FSM" > 43.75</a></td>
+<td class="s9 cl rt"><a href="mod4.html#Branch" > 94.12</a></td>
+    </tr>
+    <tr data-tt-id="mod_2" data-tt-parent-id="hierarchyTable_root">
+<td class="wordwrap"><a name="tag_fifo"></a>
+<a href="mod2.html" >fifo</a></td>
+<td class="s8 cl rt"> 89.83</td>
+<td class="wht cl rt"></td>
+<td class="s8 cl rt"><a href="mod2.html#Cond" > 83.33</a></td>
+<td class="s9 cl rt"><a href="mod2.html#Toggle" > 96.32</a></td>
+<td class="wht cl rt"></td>
+<td class="wht cl rt"></td>
+    </tr>
+    <tr data-tt-id="mod_1" data-tt-parent-id="hierarchyTable_root">
+<td class="wordwrap"><a name="tag_adder"></a>
+<a href="mod1.html" >adder</a></td>
+<td class="s9 cl rt"> 90.00</td>
+<td class="s8 cl rt"><a href="mod1.html#Line" > 80.00</a></td>
+<td class="wht cl rt"></td>
+<td class="s10 cl rt"><a href="mod1.html#Toggle" >100.00</a></td>
+<td class="wht cl rt"></td>
+<td class="wht cl rt"></td>
+    </tr>
+    <tr data-tt-id="mod_12" data-tt-parent-id="hierarchyTable_root">
+<td class="wordwrap"><a name="tag_multiplier"></a>
+<a href="mod12.html" >multiplier</a></td>
+<td class="s9 cl rt"> 90.00</td>
+<td class="s8 cl rt"><a href="mod12.html#Line" > 80.00</a></td>
+<td class="wht cl rt"></td>
+<td class="s10 cl rt"><a href="mod12.html#Toggle" >100.00</a></td>
+<td class="wht cl rt"></td>
+<td class="wht cl rt"></td>
+    </tr>
+    <tr data-tt-id="mod_7" data-tt-parent-id="hierarchyTable_root">
+<td class="wordwrap"><a name="tag_intf"></a>
+<a href="mod7.html" >intf</a></td>
+<td class="s9 cl rt"> 90.29</td>
+<td class="s10 cl rt"><a href="mod7.html#Line" >100.00</a></td>
+<td class="s6 cl rt"><a href="mod7.html#Cond" > 62.50</a></td>
+<td class="s9 cl rt"><a href="mod7.html#Toggle" > 98.65</a></td>
+<td class="wht cl rt"></td>
+<td class="s10 cl rt"><a href="mod7.html#Branch" >100.00</a></td>
+    </tr>
+    <tr data-tt-id="mod_11" data-tt-parent-id="hierarchyTable_root">
+<td class="wordwrap"><a name="tag_memory"></a>
+<a href="mod11.html" >memory</a></td>
+<td class="s9 cl rt"> 91.88</td>
+<td class="s8 cl rt"><a href="mod11.html#Line" > 85.71</a></td>
+<td class="s10 cl rt"><a href="mod11.html#Cond" >100.00</a></td>
+<td class="s10 cl rt"><a href="mod11.html#Toggle" >100.00</a></td>
+<td class="wht cl rt"></td>
+<td class="s8 cl rt"><a href="mod11.html#Branch" > 81.82</a></td>
+    </tr>
+    <tr data-tt-id="mod_6" data-tt-parent-id="hierarchyTable_root">
+<td class="wordwrap"><a name="tag_top_chip"></a>
+<a href="mod6.html" >top_chip</a></td>
+<td class="s9 cl rt"> 96.81</td>
+<td class="wht cl rt"></td>
+<td class="s9 cl rt"><a href="mod6.html#Cond" > 95.65</a></td>
+<td class="s9 cl rt"><a href="mod6.html#Toggle" > 99.77</a></td>
+<td class="wht cl rt"></td>
+<td class="s9 cl rt"><a href="mod6.html#Branch" > 95.00</a></td>
+    </tr>
+    <tr data-tt-id="mod_9" data-tt-parent-id="hierarchyTable_root">
+<td class="wordwrap"><a name="tag_memory9"></a>
+<a href="mod9.html" >memory9</a></td>
+<td class="s9 cl rt"> 97.17</td>
+<td class="s9 cl rt"><a href="mod9.html#Line" > 93.33</a></td>
+<td class="s10 cl rt"><a href="mod9.html#Cond" >100.00</a></td>
+<td class="s10 cl rt"><a href="mod9.html#Toggle" >100.00</a></td>
+<td class="wht cl rt"></td>
+<td class="s9 cl rt"><a href="mod9.html#Branch" > 95.35</a></td>
+    </tr>
+    <tr data-tt-id="var_1" data-tt-parent-id="mod_9">
+<td class="wordwrap"><a name="tag_memory9"></a>
+<a href="mod9.html#1674041576" >memory9</a></td>
+<td class="s9 cl rt"> 96.23</td>
+<td class="s9 cl rt"><a href="mod9.html#Line" > 93.33</a></td>
+<td class="s10 cl rt"><a href="mod9.html#Cond" >100.00</a></td>
+<td class="wht cl rt"></td>
+<td class="wht cl rt"></td>
+<td class="s9 cl rt"><a href="mod9.html#Branch" > 95.35</a></td>
+    </tr>
+    <tr data-tt-id="var_2" data-tt-parent-id="mod_9">
+<td class="wordwrap"><a name="tag_memory9 ( parameter WIDTH=16,HEIGHT=16384,USED_AS_EXTERNAL_MEM=0 ) "></a>
+<a href="mod9.html#713294297" >memory9 ( parameter WIDTH=16,HEIGHT=16384,USED_AS_EXTERNAL_MEM=0 ) </a></td>
+<td class="s10 cl rt">100.00</td>
+<td class="wht cl rt"></td>
+<td class="wht cl rt"></td>
+<td class="s10 cl rt"><a href="mod9.html#Toggle" >100.00</a></td>
+<td class="wht cl rt"></td>
+<td class="wht cl rt"></td>
+    </tr>
+    <tr data-tt-id="var_3" data-tt-parent-id="mod_9">
+<td class="wordwrap"><a name="tag_memory9 ( parameter WIDTH=16,HEIGHT=2048,USED_AS_EXTERNAL_MEM=0 ) "></a>
+<a href="mod9.html#212876075" >memory9 ( parameter WIDTH=16,HEIGHT=2048,USED_AS_EXTERNAL_MEM=0 ) </a></td>
+<td class="s10 cl rt">100.00</td>
+<td class="wht cl rt"></td>
+<td class="wht cl rt"></td>
+<td class="s10 cl rt"><a href="mod9.html#Toggle" >100.00</a></td>
+<td class="wht cl rt"></td>
+<td class="wht cl rt"></td>
+    </tr>
+    <tr data-tt-id="mod_0" data-tt-parent-id="hierarchyTable_root">
+<td class="wordwrap"><a name="tag_register"></a>
+<a href="mod0.html" >register</a></td>
+<td class="s9 cl rt"> 97.91</td>
+<td class="s10 cl rt"><a href="mod0.html#Line" >100.00</a></td>
+<td class="wht cl rt"></td>
+<td class="s9 cl rt"><a href="mod0.html#Toggle" > 93.73</a></td>
+<td class="wht cl rt"></td>
+<td class="s10 cl rt"><a href="mod0.html#Branch" >100.00</a></td>
+    </tr>
+    <tr data-tt-id="var_1" data-tt-parent-id="mod_0">
+<td class="wordwrap"><a name="tag_register"></a>
+<a href="mod0.html#309109443" >register</a></td>
+<td class="s10 cl rt">100.00</td>
+<td class="s10 cl rt"><a href="mod0.html#Line" >100.00</a></td>
+<td class="wht cl rt"></td>
+<td class="wht cl rt"></td>
+<td class="wht cl rt"></td>
+<td class="s10 cl rt"><a href="mod0.html#Branch" >100.00</a></td>
+    </tr>
+    <tr data-tt-id="var_2" data-tt-parent-id="mod_0">
+<td class="wordwrap"><a name="tag_register ( parameter WIDTH=1,RESET_VAL=0 ) "></a>
+<a href="mod0.html#1267365999" >register ( parameter WIDTH=1,RESET_VAL=0 ) </a></td>
+<td class="s7 cl rt"> 75.00</td>
+<td class="wht cl rt"></td>
+<td class="wht cl rt"></td>
+<td class="s7 cl rt"><a href="mod0.html#Toggle" > 75.00</a></td>
+<td class="wht cl rt"></td>
+<td class="wht cl rt"></td>
+    </tr>
+    <tr data-tt-id="var_3" data-tt-parent-id="mod_0">
+<td class="wordwrap"><a name="tag_register ( parameter WIDTH=11,RESET_VAL=0 ) "></a>
+<a href="mod0.html#1803291804" >register ( parameter WIDTH=11,RESET_VAL=0 ) </a></td>
+<td class="s9 cl rt"> 95.83</td>
+<td class="wht cl rt"></td>
+<td class="wht cl rt"></td>
+<td class="s9 cl rt"><a href="mod0.html#Toggle" > 95.83</a></td>
+<td class="wht cl rt"></td>
+<td class="wht cl rt"></td>
+    </tr>
+    <tr data-tt-id="var_4" data-tt-parent-id="mod_0">
+<td class="wordwrap"><a name="tag_register ( parameter WIDTH=14,RESET_VAL=0 ) "></a>
+<a href="mod0.html#276013287" >register ( parameter WIDTH=14,RESET_VAL=0 ) </a></td>
+<td class="s9 cl rt"> 96.67</td>
+<td class="wht cl rt"></td>
+<td class="wht cl rt"></td>
+<td class="s9 cl rt"><a href="mod0.html#Toggle" > 96.67</a></td>
+<td class="wht cl rt"></td>
+<td class="wht cl rt"></td>
+    </tr>
+    <tr data-tt-id="var_5" data-tt-parent-id="mod_0">
+<td class="wordwrap"><a name="tag_register ( parameter WIDTH=16,RESET_VAL=0 ) "></a>
+<a href="mod0.html#1662216681" >register ( parameter WIDTH=16,RESET_VAL=0 ) </a></td>
+<td class="s9 cl rt"> 99.02</td>
+<td class="wht cl rt"></td>
+<td class="wht cl rt"></td>
+<td class="s9 cl rt"><a href="mod0.html#Toggle" > 99.02</a></td>
+<td class="wht cl rt"></td>
+<td class="wht cl rt"></td>
+    </tr>
+    <tr data-tt-id="var_6" data-tt-parent-id="mod_0">
+<td class="wordwrap"><a name="tag_register ( parameter WIDTH=32,RESET_VAL=0 ) "></a>
+<a href="mod0.html#1619663197" >register ( parameter WIDTH=32,RESET_VAL=0 ) </a></td>
+<td class="s9 cl rt"> 99.49</td>
+<td class="wht cl rt"></td>
+<td class="wht cl rt"></td>
+<td class="s9 cl rt"><a href="mod0.html#Toggle" > 99.49</a></td>
+<td class="wht cl rt"></td>
+<td class="wht cl rt"></td>
+    </tr>
+    <tr data-tt-id="var_7" data-tt-parent-id="mod_0">
+<td class="wordwrap"><a name="tag_register ( parameter WIDTH=5,RESET_VAL=0 ) "></a>
+<a href="mod0.html#2008655117" >register ( parameter WIDTH=5,RESET_VAL=0 ) </a></td>
+<td class="s9 cl rt"> 97.22</td>
+<td class="wht cl rt"></td>
+<td class="wht cl rt"></td>
+<td class="s9 cl rt"><a href="mod0.html#Toggle" > 97.22</a></td>
+<td class="wht cl rt"></td>
+<td class="wht cl rt"></td>
+    </tr>
+    <tr data-tt-id="var_8" data-tt-parent-id="mod_0">
+<td class="wordwrap"><a name="tag_register ( parameter WIDTH=6,RESET_VAL=0 ) "></a>
+<a href="mod0.html#1753918572" >register ( parameter WIDTH=6,RESET_VAL=0 ) </a></td>
+<td class="s9 cl rt"> 92.86</td>
+<td class="wht cl rt"></td>
+<td class="wht cl rt"></td>
+<td class="s9 cl rt"><a href="mod0.html#Toggle" > 92.86</a></td>
+<td class="wht cl rt"></td>
+<td class="wht cl rt"></td>
+    </tr>
+    <tr data-tt-id="mod_10" data-tt-parent-id="hierarchyTable_root">
+<td class="wordwrap"><a name="tag_mac"></a>
+<a href="mod10.html" >mac</a></td>
+<td class="s9 cl rt"> 98.98</td>
+<td class="wht cl rt"></td>
+<td class="s10 cl rt"><a href="mod10.html#Cond" >100.00</a></td>
+<td class="s9 cl rt"><a href="mod10.html#Toggle" > 96.93</a></td>
+<td class="wht cl rt"></td>
+<td class="s10 cl rt"><a href="mod10.html#Branch" >100.00</a></td>
+    </tr>
+    <tr data-tt-id="mod_8" data-tt-parent-id="hierarchyTable_root">
+<td class="wordwrap"><a name="tag_tbench_top"></a>
+<a href="mod8.html" >tbench_top</a></td>
+<td class="s10 cl rt">100.00</td>
+<td class="s10 cl rt"><a href="mod8.html#Line" >100.00</a></td>
+<td class="wht cl rt"></td>
+<td class="s10 cl rt"><a href="mod8.html#Toggle" >100.00</a></td>
+<td class="wht cl rt"></td>
+<td class="wht cl rt"></td>
+    </tr>
+  </tbody>
+</table>
+</div>
+<div class="ui-layout-south">
+<table align=center><tr><td class="s0 cl">0%</td>
+<td class="s1 cl">10%</td>
+<td class="s2 cl">20%</td>
+<td class="s3 cl">30%</td>
+<td class="s4 cl">40%</td>
+<td class="s5 cl">50%</td>
+<td class="s6 cl">60%</td>
+<td class="s7 cl">70%</td>
+<td class="s8 cl">80%</td>
+<td class="s9 cl">90%</td>
+<td class="s10 cl">100%</td></tr></table></div>
+
+<script>
+$("#hierarchyTable").treetable({ expandable: true });
+</script>
+</body>
+</html>

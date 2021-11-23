@@ -1,0 +1,3287 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="Author" content="<username>"> <meta name="GENERATOR" content="urg/version [en] (platform name) [urg]">
+<title>Unified Coverage Report :: Module :: controller_fsm</title>
+<link type="text/css" rel="stylesheet" href="css/.urg.css">
+<link type="text/css" rel="stylesheet" href="css/.layout.css">
+<link type="text/css" rel="stylesheet" href="css/.breadcrumb.css">
+<script type="text/javascript" src="js/.jquery.js"></script>
+<script type="text/javascript" src="js/.jquery-ui.js"></script>
+<script type="text/javascript" src="js/.sortable.js"></script>
+<script type="text/javascript" src="js/.layout.js"></script>
+<script type="text/javascript" src="js/.breadcrumb.js"></script>
+<script type="text/javascript">
+var layout, westLayout, centerLayout;
+$(document).ready(function () {
+  if ($("#north-bread-crumb")) {
+    $("#north-bread-crumb").jBreadCrumb({easing:'swing'})
+  }
+  layout = $("body").layout({ 
+    resizable: true,
+    spacing_open: 4,
+    spacing_closed: 4,
+    north: {
+      size: 76
+    },
+    south: {
+      size: 45,
+      initClosed: true
+    },
+    west: {
+      size: 500,
+      resizable: true,
+      initClosed: false
+    }
+  });
+  centerLayout = $('div.ui-layout-center').layout({
+    north__paneSelector: ".ui-layout-center-inner-north",
+    center__paneSelector: ".ui-layout-center-inner-center", 
+    north__size: 50,
+    spacing_open: 4,
+    spacing_closed: 4
+  });
+});
+</script>
+</head>
+<body onLoad="initPage();"><div class="ui-layout-north">
+<div class="logo"></div>
+<center class="pagetitle">Module Definition</center>
+<div align="center"><a href="dashboard.html" ><b>dashboard</b></a> | <a href="hierarchy.html" ><b>hierarchy</b></a> | <a href="modlist.html" ><b>modlist</b></a> | groups | <a href="tests.html" ><b>tests</b></a> | asserts</div>
+
+</div>
+<div class="ui-layout-west">
+<div name='tag_controller_fsm'>
+<div class=modhdr>
+<br clear=all>
+<span class=titlename>Module : <a href="#"  onclick="showContent('tag_controller_fsm')">controller_fsm</a></span>
+<br clear=all>
+<table align=left>
+<tr class="sortablehead">
+<td>SCORE</td><td>LINE</td><td>COND</td><td>TOGGLE</td><td>FSM</td><td>BRANCH</td></tr><tr>
+<td class="s7 cl rt"> 75.82</td>
+<td class="s10 cl rt"><a href="mod4.html#Line" >100.00</a></td>
+<td class="s7 cl rt"><a href="mod4.html#Cond" > 71.19</a></td>
+<td class="s7 cl rt"><a href="mod4.html#Toggle" > 70.06</a></td>
+<td class="s4 cl rt"><a href="mod4.html#FSM" > 43.75</a></td>
+<td class="s9 cl rt"><a href="mod4.html#Branch" > 94.12</a></td>
+</tr></table><br clear=all>
+<span class=repname>Source File(s) : </span>
+<br clear=all>
+<a href="javascript:void(0);"  onclick="openSrcFile('/users/students/r0773655/Downloads/ref/CPAED/21223/src/device/controller_fsm.sv')">/users/students/r0773655/Downloads/ref/CPAED/21223/src/device/controller_fsm.sv</a><br clear=all>
+<br clear=all>
+<span class=repname>Module self-instances :</span>
+<br clear=all>
+<table align=left>
+<tr class="sortablehead">
+<td class="alfsrt">NAME</td><td>SCORE</td><td>LINE</td><td>COND</td><td>TOGGLE</td><td>FSM</td><td>BRANCH</td></tr><tr>
+<td class="wht cl wordwrap"><a href="mod4.html#inst_tag_66"  onclick="showContent('inst_tag_66')">tbench_top.dut.top_chip_i.controller</a></td>
+<td class="s7 cl rt"> 75.82</td>
+<td class="s10 cl rt"><a href="mod4.html#Line" >100.00</a></td>
+<td class="s7 cl rt"><a href="mod4.html#Cond" > 71.19</a></td>
+<td class="s7 cl rt"><a href="mod4.html#Toggle" > 70.06</a></td>
+<td class="s4 cl rt"><a href="mod4.html#FSM" > 43.75</a></td>
+<td class="s9 cl rt"><a href="mod4.html#Branch" > 94.12</a></td>
+</tr></table></div>
+</div>
+<br clear=all>
+<div name='tag_controller_fsm'>
+<hr>
+<a name="inst_tag_66"></a>
+<div class=modhdr>
+<br clear=all>
+<span class=titlename>Module Instance : <a href="hierarchy.html#tag_urg_inst_66" >tbench_top.dut.top_chip_i.controller</a></span>
+<br clear=all>
+<br clear=all>
+<span class=repname>Instance :</span>
+<br clear=all>
+<table align=left>
+<tr class="sortablehead">
+<td>SCORE</td><td>LINE</td><td>COND</td><td>TOGGLE</td><td>FSM</td><td>BRANCH</td></tr><tr>
+<td class="s7 cl rt"> 75.82</td>
+<td class="s10 cl rt"><a href="mod4.html#Line" >100.00</a></td>
+<td class="s7 cl rt"><a href="mod4.html#Cond" > 71.19</a></td>
+<td class="s7 cl rt"><a href="mod4.html#Toggle" > 70.06</a></td>
+<td class="s4 cl rt"><a href="mod4.html#FSM" > 43.75</a></td>
+<td class="s9 cl rt"><a href="mod4.html#Branch" > 94.12</a></td>
+</tr></table><br clear=all>
+<br clear=all>
+<span class=repname>Instance's subtree :</span>
+<br clear=all>
+<table align=left>
+<tr class="sortablehead">
+<td>SCORE</td><td>LINE</td><td>COND</td><td>TOGGLE</td><td>FSM</td><td>BRANCH</td></tr><tr>
+<td class="s7 cl rt"> 72.35</td>
+<td class="s10 cl rt">100.00</td>
+<td class="s7 cl rt"> 71.19</td>
+<td class="s6 cl rt"> 63.27</td>
+<td class="s4 cl rt"> 43.75</td>
+<td class="s8 cl rt"> 83.54</td>
+</tr></table><br clear=all>
+<br clear=all>
+<span class=repname>Parent : </span>
+<br clear=all>
+<table align=left>
+<tr class="sortablehead">
+<td>SCORE</td><td>LINE</td><td>COND</td><td>TOGGLE</td><td>FSM</td><td>BRANCH</td><td class="alfsrt">NAME</td></tr><tr>
+<td class="s9 cl rt"> 96.81</td>
+<td class="wht cl rt"></td>
+<td class="s9 cl rt"> 95.65</td>
+<td class="s9 cl rt"> 99.77</td>
+<td class="wht cl rt"></td>
+<td class="s9 cl rt"> 95.00</td>
+<td><a href="mod6.html#inst_tag_68" >top_chip_i</a></td>
+</tr></table><br clear=all>
+<br clear=all>
+<span class=repname>Subtrees :</span>
+<br clear=all>
+<table align=left>
+<tr class="sortablehead">
+<td class="alfsrt">NAME</td><td>SCORE</td><td>LINE</td><td>COND</td><td>TOGGLE</td><td>FSM</td><td>BRANCH</td></tr><tr>
+<td class="wht cl wordwrap"><a href="mod0_1.html#inst_tag_23" id="tag_urg_inst_23">a1_addrd_r</a></td>
+<td class="s8 cl rt"> 87.78</td>
+<td class="s10 cl rt">100.00</td>
+<td class="wht cl rt"></td>
+<td class="s9 cl rt"> 96.67</td>
+<td class="wht cl rt"></td>
+<td class="s6 cl rt"> 66.67</td>
+</tr><tr>
+<td class="wht cl wordwrap"><a href="mod0_1.html#inst_tag_24" id="tag_urg_inst_24">a2_addrd_r</a></td>
+<td class="s8 cl rt"> 87.78</td>
+<td class="s10 cl rt">100.00</td>
+<td class="wht cl rt"></td>
+<td class="s9 cl rt"> 96.67</td>
+<td class="wht cl rt"></td>
+<td class="s6 cl rt"> 66.67</td>
+</tr><tr>
+<td class="wht cl wordwrap"><a href="mod0_1.html#inst_tag_25" id="tag_urg_inst_25">a3_addrd_r</a></td>
+<td class="s8 cl rt"> 87.78</td>
+<td class="s10 cl rt">100.00</td>
+<td class="wht cl rt"></td>
+<td class="s9 cl rt"> 96.67</td>
+<td class="wht cl rt"></td>
+<td class="s6 cl rt"> 66.67</td>
+</tr><tr>
+<td class="wht cl wordwrap"><a href="mod0_1.html#inst_tag_26" id="tag_urg_inst_26">a4_addrd_r</a></td>
+<td class="s8 cl rt"> 87.78</td>
+<td class="s10 cl rt">100.00</td>
+<td class="wht cl rt"></td>
+<td class="s9 cl rt"> 96.67</td>
+<td class="wht cl rt"></td>
+<td class="s6 cl rt"> 66.67</td>
+</tr><tr>
+<td class="wht cl wordwrap"><a href="mod0_1.html#inst_tag_27" id="tag_urg_inst_27">a5_addrd_r</a></td>
+<td class="s8 cl rt"> 87.78</td>
+<td class="s10 cl rt">100.00</td>
+<td class="wht cl rt"></td>
+<td class="s9 cl rt"> 96.67</td>
+<td class="wht cl rt"></td>
+<td class="s6 cl rt"> 66.67</td>
+</tr><tr>
+<td class="wht cl wordwrap"><a href="mod0_1.html#inst_tag_28" id="tag_urg_inst_28">a6_addrd_r</a></td>
+<td class="s8 cl rt"> 87.78</td>
+<td class="s10 cl rt">100.00</td>
+<td class="wht cl rt"></td>
+<td class="s9 cl rt"> 96.67</td>
+<td class="wht cl rt"></td>
+<td class="s6 cl rt"> 66.67</td>
+</tr><tr>
+<td class="wht cl wordwrap"><a href="mod0_1.html#inst_tag_29" id="tag_urg_inst_29">a7_addrd_r</a></td>
+<td class="s8 cl rt"> 87.78</td>
+<td class="s10 cl rt">100.00</td>
+<td class="wht cl rt"></td>
+<td class="s9 cl rt"> 96.67</td>
+<td class="wht cl rt"></td>
+<td class="s6 cl rt"> 66.67</td>
+</tr><tr>
+<td class="wht cl wordwrap"><a href="mod0_1.html#inst_tag_30" id="tag_urg_inst_30">a8_addrd_r</a></td>
+<td class="s8 cl rt"> 87.78</td>
+<td class="s10 cl rt">100.00</td>
+<td class="wht cl rt"></td>
+<td class="s9 cl rt"> 96.67</td>
+<td class="wht cl rt"></td>
+<td class="s6 cl rt"> 66.67</td>
+</tr><tr>
+<td class="wht cl wordwrap"><a href="mod0_1.html#inst_tag_31" id="tag_urg_inst_31">a9_addrd_r</a></td>
+<td class="s8 cl rt"> 87.78</td>
+<td class="s10 cl rt">100.00</td>
+<td class="wht cl rt"></td>
+<td class="s9 cl rt"> 96.67</td>
+<td class="wht cl rt"></td>
+<td class="s6 cl rt"> 66.67</td>
+</tr><tr>
+<td class="wht cl wordwrap"><a href="mod0_2.html#inst_tag_46" id="tag_urg_inst_46">amem</a></td>
+<td class="s8 cl rt"> 87.78</td>
+<td class="s10 cl rt">100.00</td>
+<td class="wht cl rt"></td>
+<td class="s9 cl rt"> 96.67</td>
+<td class="wht cl rt"></td>
+<td class="s6 cl rt"> 66.67</td>
+</tr><tr>
+<td class="wht cl wordwrap"><a href="mod0_1.html#inst_tag_32" id="tag_urg_inst_32">b1_addrd_r</a></td>
+<td class="s8 cl rt"> 87.50</td>
+<td class="s10 cl rt">100.00</td>
+<td class="wht cl rt"></td>
+<td class="s9 cl rt"> 95.83</td>
+<td class="wht cl rt"></td>
+<td class="s6 cl rt"> 66.67</td>
+</tr><tr>
+<td class="wht cl wordwrap"><a href="mod0_1.html#inst_tag_33" id="tag_urg_inst_33">b2_addrd_r</a></td>
+<td class="s8 cl rt"> 87.50</td>
+<td class="s10 cl rt">100.00</td>
+<td class="wht cl rt"></td>
+<td class="s9 cl rt"> 95.83</td>
+<td class="wht cl rt"></td>
+<td class="s6 cl rt"> 66.67</td>
+</tr><tr>
+<td class="wht cl wordwrap"><a href="mod0_1.html#inst_tag_34" id="tag_urg_inst_34">b3_addrd_r</a></td>
+<td class="s8 cl rt"> 87.50</td>
+<td class="s10 cl rt">100.00</td>
+<td class="wht cl rt"></td>
+<td class="s9 cl rt"> 95.83</td>
+<td class="wht cl rt"></td>
+<td class="s6 cl rt"> 66.67</td>
+</tr><tr>
+<td class="wht cl wordwrap"><a href="mod0_1.html#inst_tag_35" id="tag_urg_inst_35">b4_addrd_r</a></td>
+<td class="s8 cl rt"> 87.50</td>
+<td class="s10 cl rt">100.00</td>
+<td class="wht cl rt"></td>
+<td class="s9 cl rt"> 95.83</td>
+<td class="wht cl rt"></td>
+<td class="s6 cl rt"> 66.67</td>
+</tr><tr>
+<td class="wht cl wordwrap"><a href="mod0_1.html#inst_tag_36" id="tag_urg_inst_36">b5_addrd_r</a></td>
+<td class="s8 cl rt"> 87.50</td>
+<td class="s10 cl rt">100.00</td>
+<td class="wht cl rt"></td>
+<td class="s9 cl rt"> 95.83</td>
+<td class="wht cl rt"></td>
+<td class="s6 cl rt"> 66.67</td>
+</tr><tr>
+<td class="wht cl wordwrap"><a href="mod0_1.html#inst_tag_37" id="tag_urg_inst_37">b6_addrd_r</a></td>
+<td class="s8 cl rt"> 87.50</td>
+<td class="s10 cl rt">100.00</td>
+<td class="wht cl rt"></td>
+<td class="s9 cl rt"> 95.83</td>
+<td class="wht cl rt"></td>
+<td class="s6 cl rt"> 66.67</td>
+</tr><tr>
+<td class="wht cl wordwrap"><a href="mod0_1.html#inst_tag_38" id="tag_urg_inst_38">b7_addrd_r</a></td>
+<td class="s8 cl rt"> 87.50</td>
+<td class="s10 cl rt">100.00</td>
+<td class="wht cl rt"></td>
+<td class="s9 cl rt"> 95.83</td>
+<td class="wht cl rt"></td>
+<td class="s6 cl rt"> 66.67</td>
+</tr><tr>
+<td class="wht cl wordwrap"><a href="mod0_1.html#inst_tag_39" id="tag_urg_inst_39">b8_addrd_r</a></td>
+<td class="s8 cl rt"> 87.50</td>
+<td class="s10 cl rt">100.00</td>
+<td class="wht cl rt"></td>
+<td class="s9 cl rt"> 95.83</td>
+<td class="wht cl rt"></td>
+<td class="s6 cl rt"> 66.67</td>
+</tr><tr>
+<td class="wht cl wordwrap"><a href="mod0_1.html#inst_tag_40" id="tag_urg_inst_40">b9_addrd_r</a></td>
+<td class="s8 cl rt"> 87.50</td>
+<td class="s10 cl rt">100.00</td>
+<td class="wht cl rt"></td>
+<td class="s9 cl rt"> 95.83</td>
+<td class="wht cl rt"></td>
+<td class="s6 cl rt"> 66.67</td>
+</tr><tr>
+<td class="wht cl wordwrap"><a href="mod0_2.html#inst_tag_47" id="tag_urg_inst_47">bmem</a></td>
+<td class="s8 cl rt"> 87.50</td>
+<td class="s10 cl rt">100.00</td>
+<td class="wht cl rt"></td>
+<td class="s9 cl rt"> 95.83</td>
+<td class="wht cl rt"></td>
+<td class="s6 cl rt"> 66.67</td>
+</tr><tr>
+<td class="wht cl wordwrap"><a href="mod0_0.html#inst_tag_21" id="tag_urg_inst_21">ch_in_r</a></td>
+<td class="s6 cl rt"> 69.53</td>
+<td class="s10 cl rt">100.00</td>
+<td class="wht cl rt"></td>
+<td class="s0 cl rt">  8.59</td>
+<td class="wht cl rt"></td>
+<td class="s10 cl rt">100.00</td>
+</tr><tr>
+<td class="wht cl wordwrap"><a href="mod0_1.html#inst_tag_22" id="tag_urg_inst_22">ch_out_r</a></td>
+<td class="s7 cl rt"> 72.56</td>
+<td class="s10 cl rt">100.00</td>
+<td class="wht cl rt"></td>
+<td class="s1 cl rt"> 17.68</td>
+<td class="wht cl rt"></td>
+<td class="s10 cl rt">100.00</td>
+</tr><tr>
+<td class="wht cl wordwrap"><a href="mod0_2.html#inst_tag_48" id="tag_urg_inst_48">initcount_r</a></td>
+<td class="s8 cl rt"> 86.51</td>
+<td class="s10 cl rt">100.00</td>
+<td class="wht cl rt"></td>
+<td class="s9 cl rt"> 92.86</td>
+<td class="wht cl rt"></td>
+<td class="s6 cl rt"> 66.67</td>
+</tr><tr>
+<td class="wht cl wordwrap"><a href="mod0_2.html#inst_tag_45" id="tag_urg_inst_45">output_ch_r</a></td>
+<td class="s7 cl rt"> 72.56</td>
+<td class="s10 cl rt">100.00</td>
+<td class="wht cl rt"></td>
+<td class="s1 cl rt"> 17.68</td>
+<td class="wht cl rt"></td>
+<td class="s10 cl rt">100.00</td>
+</tr><tr>
+<td class="wht cl wordwrap"><a href="mod0_1.html#inst_tag_42" id="tag_urg_inst_42">output_valid_reg_r</a></td>
+<td class="s8 cl rt"> 80.56</td>
+<td class="s10 cl rt">100.00</td>
+<td class="wht cl rt"></td>
+<td class="s7 cl rt"> 75.00</td>
+<td class="wht cl rt"></td>
+<td class="s6 cl rt"> 66.67</td>
+</tr><tr>
+<td class="wht cl wordwrap"><a href="mod0_1.html#inst_tag_43" id="tag_urg_inst_43">output_x_r</a></td>
+<td class="s7 cl rt"> 73.23</td>
+<td class="s10 cl rt">100.00</td>
+<td class="wht cl rt"></td>
+<td class="s1 cl rt"> 19.70</td>
+<td class="wht cl rt"></td>
+<td class="s10 cl rt">100.00</td>
+</tr><tr>
+<td class="wht cl wordwrap"><a href="mod0_2.html#inst_tag_44" id="tag_urg_inst_44">output_y_r</a></td>
+<td class="s7 cl rt"> 73.57</td>
+<td class="s10 cl rt">100.00</td>
+<td class="wht cl rt"></td>
+<td class="s2 cl rt"> 20.71</td>
+<td class="wht cl rt"></td>
+<td class="s10 cl rt">100.00</td>
+</tr><tr>
+<td class="wht cl wordwrap"><a href="mod0_1.html#inst_tag_41" id="tag_urg_inst_41">prev_ch_out_r</a></td>
+<td class="s7 cl rt"> 72.56</td>
+<td class="s10 cl rt">100.00</td>
+<td class="wht cl rt"></td>
+<td class="s1 cl rt"> 17.68</td>
+<td class="wht cl rt"></td>
+<td class="s10 cl rt">100.00</td>
+</tr><tr>
+<td class="wht cl wordwrap"><a href="mod0_0.html#inst_tag_19" id="tag_urg_inst_19">x_r</a></td>
+<td class="s7 cl rt"> 73.57</td>
+<td class="s10 cl rt">100.00</td>
+<td class="wht cl rt"></td>
+<td class="s2 cl rt"> 20.71</td>
+<td class="wht cl rt"></td>
+<td class="s10 cl rt">100.00</td>
+</tr><tr>
+<td class="wht cl wordwrap"><a href="mod0_0.html#inst_tag_20" id="tag_urg_inst_20">y_r</a></td>
+<td class="s7 cl rt"> 73.57</td>
+<td class="s10 cl rt">100.00</td>
+<td class="wht cl rt"></td>
+<td class="s2 cl rt"> 20.71</td>
+<td class="wht cl rt"></td>
+<td class="s10 cl rt">100.00</td>
+</tr></table><br clear=all>
+</div>
+</div>
+<hr>
+Since this is the module's only instance, the coverage report is the same as for the module.</div>
+<div class="ui-layout-center">
+<div class="ui-layout-center-inner-center">
+<div name='tag_controller_fsm'>
+<a name="Line"></a>
+Line Coverage for Module : <a href="mod4.html" >controller_fsm</a><br clear=all>
+<table class="noborder">
+<col width="122">
+<col span="4" width="82">
+<tr><th></th><th>Line No.</th><th>Total</th><th>Covered</th><th>Percent</th></tr>
+<tr class="s10"><td class="lf">TOTAL</td><td></td><td>84</td><td>84</td><td>100.00</td></tr>
+<tr class="s10"><td class="lf">ALWAYS</td><td>248</td><td>3</td><td>3</td><td>100.00</td></tr>
+<tr class="s10"><td class="lf">ALWAYS</td><td>261</td><td>81</td><td>81</td><td>100.00</td></tr>
+</table>
+<pre class="code"><br clear=all>
+247                       always @ (posedge clk or negedge arst_n_in) begin
+248        1/1              if(arst_n_in==0) begin
+249        1/1                current_state &lt;= IDLE;
+250                         end else begin
+251        1/1                current_state &lt;= next_state;
+252                         end
+253                       end
+254                     logic [5:0]initcount_fsm;
+255                      `REG(6,initcount);
+256                       assign initcount_next = (initcount==35)? 0 : initcount_fsm;
+257                       assign initcount_we = 1;
+258                     
+259                       always_comb begin
+260                         //defaults: applicable if not overwritten below
+261        1/1              next_state = current_state;
+262        1/1              initcount_fsm = initcount_fsm;
+263        1/1              mac_valid_1 = 0;
+264        1/1              mac_valid_2 = 0;
+265        1/1              mac_valid_3 = 0;
+266        1/1              running = 1;
+267        1/1              amem_c = amem_c;
+268        1/1              amem_write_en=0;
+269        1/1              bmem_c = bmem_c;
+270        1/1              bmem_write_en = 0;
+271                     
+272        1/1              case (current_state)
+273                           IDLE: begin
+274        1/1                  initcount_fsm = 0;
+275        1/1          	amem_c=0;
+276        1/1          	bmem_c=0;
+277        1/1          	XXX = 0;
+278        1/1                  running = 0;
+279        1/1          	a_ready = 0;
+280        1/1                  b_ready = 0;
+281        1/1          	mac_valid_1 = 0;
+282        1/1          	mac_valid_2 = 0;
+283        1/1                  mac_valid_3 = 0;
+284        1/1                  next_state = start ? AF: IDLE;
+285                           end
+286                           AF : begin
+287        1/1          	XXX = 0;
+288        1/1                  running = 0;
+289        1/1          	a_ready = 1;
+290        1/1                  b_ready = 0;
+291        1/1          	mac_valid_1 = 0;
+292        1/1          	mac_valid_2 = 0;
+293        1/1                  mac_valid_3 = 0;
+294        1/1          	amem_c = amem_addr+1;
+295        1/1          	amem_write_en=1;
+296        1/1                  next_state = (amem_addr==16383) ? BF: AF;
+297                     	end
+298                             BF : begin
+299        1/1          	XXX = 0;
+300        1/1                  running = 0;
+301        1/1          	a_ready = 0;
+302        1/1                  b_ready = 1;
+303        1/1          	mac_valid_1 = 0;
+304        1/1          	mac_valid_2 = 0;
+305        1/1                  mac_valid_3 = 0;
+306        1/1          	bmem_c = bmem_addr+1;
+307        1/1          	bmem_write_en=1;
+308        1/1                  next_state = (bmem_addr==1151) ? init: BF;
+309                     	end
+310                           init: begin
+311        1/1                  initcount_fsm = initcount +1;
+312        1/1                  XXX = 1;
+313        1/1          	running = 0;
+314        1/1          	a_ready = 0;
+315        1/1                  b_ready = 0;
+316        1/1          	mac_valid_1 = 0;
+317        1/1          	mac_valid_2 = 0;
+318        1/1                  mac_valid_3 = 0;
+319        1/1          	next_state = (initcount==33)? FETCH_1:init;
+320                     	end
+321                           FETCH_1: begin
+322        1/1          	write_a = (ch_out==0)?1:0;
+323        1/1                  XXX = 0;
+324        1/1                  write_b = 1;
+325        1/1          	mac_valid_1 = 0;
+326        1/1          	mac_valid_2 = 0;
+327        1/1                  mac_valid_3 = 0;
+328        1/1                  next_state = MAC_1;
+329                           end
+330                           MAC_1: begin
+331        1/1                  XXX = 0;
+332        1/1          	a_ready = 0;
+333        1/1                  b_ready = 0;
+334        1/1          	write_a = 0;
+335        1/1                  write_b = 0;
+336        1/1                  mac_valid_1 = 1;
+337        1/1                  mac_valid_2 = 0;
+338        1/1                  mac_valid_3 = 0;
+339        1/1                  next_state = MAC_2;
+340                           end
+341                           MAC_2: begin
+342        1/1                  XXX = 0;
+343        1/1          	a_ready = 0;
+344        1/1                  b_ready = 0;
+345        1/1                  mac_valid_1 = 0;
+346        1/1                  mac_valid_2 = 1;
+347        1/1                  mac_valid_3 = 0;
+348        1/1                  next_state = MAC_3;
+349                           end
+350                             MAC_3: begin
+351        1/1                  XXX = 0;
+352        1/1          	a_ready = 0;
+353        1/1                  b_ready = 0;
+354        1/1                  mac_valid_1 = 0;
+355        1/1                  mac_valid_2 = 0;
+356        1/1                  mac_valid_3 = 1;
+357        1/1                  next_state = last_overall ? IDLE: ((ch_out==32'h1f &amp;&amp; ch_in ==32'h3) ?  init :FETCH_1);
+358                           end
+                   <font color = "red">==>  MISSING_DEFAULT</font>
+</pre>
+<hr>
+<a name="Cond"></a>
+Cond Coverage for Module : <a href="mod4.html" >controller_fsm</a><br clear=all>
+<table class="noborder">
+<col width="122">
+<col span="3" width="82">
+<tr><th></th><th>Total</th><th>Covered</th><th>Percent</th></tr>
+<tr class="s7"><td class="lf">Conditions</td><td>177</td><td>126</td><td>71.19</td></tr>
+<tr class="s7"><td class="lf">Logical</td><td>177</td><td>126</td><td>71.19</td></tr>
+<tr class="wht"><td class="lf">Non-Logical</td><td>0</td><td>0</td><td></td></tr>
+<tr class="wht"><td class="lf">Event</td><td>0</td><td>0</td><td></td></tr>
+</table>
+<br clear=all>
+<pre class="code"> LINE       126
+ EXPRESSION 
+ Number  Term
+      1  (((x - (KERNEL_SIZE / 2)) &gt;= 0) &amp;&amp; ((x - (KERNEL_SIZE / 2)) &lt; FEATURE_MAP_WIDTH) &amp;&amp; ((y - (KERNEL_SIZE / 2)) &gt;= 0) &amp;&amp; ((y - (KERNEL_SIZE / 2)) &lt; FEATURE_MAP_HEIGHT)) ? ((((256 * (x - (KERNEL_SIZE / 2))) + (4 * (y - (KERNEL_SIZE / 2)))) + ch_in)) : 0)
+</pre>
+<table class="noborder">
+<col width="40">
+<tr><th>-1-</th><th>Status</th></tr>
+<tr class="uGreen"><td>0</td><td class="lf">Covered</td></tr>
+<tr class="uGreen"><td>1</td><td class="lf">Covered</td></tr>
+</table>
+<br clear=all>
+<pre class="code"> LINE       126
+ SUB-EXPRESSION 
+ Number  Term
+      1  ((x - (KERNEL_SIZE / 2)) &gt;= 0) &amp;&amp; 
+      2  ((x - (KERNEL_SIZE / 2)) &lt; FEATURE_MAP_WIDTH) &amp;&amp; 
+      3  ((y - (KERNEL_SIZE / 2)) &gt;= 0) &amp;&amp; 
+      4  ((y - (KERNEL_SIZE / 2)) &lt; FEATURE_MAP_HEIGHT))
+</pre>
+<table class="noborder">
+<col span="4" width="40">
+<tr><th>-1-</th><th>-2-</th><th>-3-</th><th>-4-</th><th>Status</th></tr>
+<tr class="uRed"><td>0</td><td>1</td><td>1</td><td>1</td><td class="lf">Not Covered</td></tr>
+<tr class="uGreen"><td>1</td><td>0</td><td>1</td><td>1</td><td class="lf">Covered</td></tr>
+<tr class="uRed"><td>1</td><td>1</td><td>0</td><td>1</td><td class="lf">Not Covered</td></tr>
+<tr class="uGreen"><td>1</td><td>1</td><td>1</td><td>0</td><td class="lf">Covered</td></tr>
+<tr class="uGreen"><td>1</td><td>1</td><td>1</td><td>1</td><td class="lf">Covered</td></tr>
+</table>
+<br clear=all>
+<pre class="code"> LINE       127
+ EXPRESSION 
+ Number  Term
+      1  ((((x + 1) - (KERNEL_SIZE / 2)) &gt;= 0) &amp;&amp; (((x + 1) - (KERNEL_SIZE / 2)) &lt; FEATURE_MAP_WIDTH) &amp;&amp; ((y - (KERNEL_SIZE / 2)) &gt;= 0) &amp;&amp; ((y - (KERNEL_SIZE / 2)) &lt; FEATURE_MAP_HEIGHT)) ? ((((256 * ((x + 1) - (KERNEL_SIZE / 2))) + (4 * (y - (KERNEL_SIZE / 2)))) + ch_in)) : 0)
+</pre>
+<table class="noborder">
+<col width="40">
+<tr><th>-1-</th><th>Status</th></tr>
+<tr class="uGreen"><td>0</td><td class="lf">Covered</td></tr>
+<tr class="uGreen"><td>1</td><td class="lf">Covered</td></tr>
+</table>
+<br clear=all>
+<pre class="code"> LINE       127
+ SUB-EXPRESSION 
+ Number  Term
+      1  (((x + 1) - (KERNEL_SIZE / 2)) &gt;= 0) &amp;&amp; 
+      2  (((x + 1) - (KERNEL_SIZE / 2)) &lt; FEATURE_MAP_WIDTH) &amp;&amp; 
+      3  ((y - (KERNEL_SIZE / 2)) &gt;= 0) &amp;&amp; 
+      4  ((y - (KERNEL_SIZE / 2)) &lt; FEATURE_MAP_HEIGHT))
+</pre>
+<table class="noborder">
+<col span="4" width="40">
+<tr><th>-1-</th><th>-2-</th><th>-3-</th><th>-4-</th><th>Status</th></tr>
+<tr class="uRed"><td>0</td><td>1</td><td>1</td><td>1</td><td class="lf">Not Covered</td></tr>
+<tr class="uRed"><td>1</td><td>0</td><td>1</td><td>1</td><td class="lf">Not Covered</td></tr>
+<tr class="uRed"><td>1</td><td>1</td><td>0</td><td>1</td><td class="lf">Not Covered</td></tr>
+<tr class="uGreen"><td>1</td><td>1</td><td>1</td><td>0</td><td class="lf">Covered</td></tr>
+<tr class="uGreen"><td>1</td><td>1</td><td>1</td><td>1</td><td class="lf">Covered</td></tr>
+</table>
+<br clear=all>
+<pre class="code"> LINE       128
+ EXPRESSION 
+ Number  Term
+      1  ((((x + 2) - (KERNEL_SIZE / 2)) &gt;= 0) &amp;&amp; (((x + 2) - (KERNEL_SIZE / 2)) &lt; FEATURE_MAP_WIDTH) &amp;&amp; ((y - (KERNEL_SIZE / 2)) &gt;= 0) &amp;&amp; ((y - (KERNEL_SIZE / 2)) &lt; FEATURE_MAP_HEIGHT)) ? ((((256 * ((x + 2) - (KERNEL_SIZE / 2))) + (4 * (y - (KERNEL_SIZE / 2)))) + ch_in)) : 0)
+</pre>
+<table class="noborder">
+<col width="40">
+<tr><th>-1-</th><th>Status</th></tr>
+<tr class="uGreen"><td>0</td><td class="lf">Covered</td></tr>
+<tr class="uGreen"><td>1</td><td class="lf">Covered</td></tr>
+</table>
+<br clear=all>
+<pre class="code"> LINE       128
+ SUB-EXPRESSION 
+ Number  Term
+      1  (((x + 2) - (KERNEL_SIZE / 2)) &gt;= 0) &amp;&amp; 
+      2  (((x + 2) - (KERNEL_SIZE / 2)) &lt; FEATURE_MAP_WIDTH) &amp;&amp; 
+      3  ((y - (KERNEL_SIZE / 2)) &gt;= 0) &amp;&amp; 
+      4  ((y - (KERNEL_SIZE / 2)) &lt; FEATURE_MAP_HEIGHT))
+</pre>
+<table class="noborder">
+<col span="4" width="40">
+<tr><th>-1-</th><th>-2-</th><th>-3-</th><th>-4-</th><th>Status</th></tr>
+<tr class="uRed"><td>0</td><td>1</td><td>1</td><td>1</td><td class="lf">Not Covered</td></tr>
+<tr class="uGreen"><td>1</td><td>0</td><td>1</td><td>1</td><td class="lf">Covered</td></tr>
+<tr class="uRed"><td>1</td><td>1</td><td>0</td><td>1</td><td class="lf">Not Covered</td></tr>
+<tr class="uGreen"><td>1</td><td>1</td><td>1</td><td>0</td><td class="lf">Covered</td></tr>
+<tr class="uGreen"><td>1</td><td>1</td><td>1</td><td>1</td><td class="lf">Covered</td></tr>
+</table>
+<br clear=all>
+<pre class="code"> LINE       129
+ EXPRESSION 
+ Number  Term
+      1  (((x - (KERNEL_SIZE / 2)) &gt;= 0) &amp;&amp; ((x - (KERNEL_SIZE / 2)) &lt; FEATURE_MAP_WIDTH) &amp;&amp; (((y + 1) - (KERNEL_SIZE / 2)) &gt;= 0) &amp;&amp; (((y + 1) - (KERNEL_SIZE / 2)) &lt; FEATURE_MAP_HEIGHT)) ? ((((256 * (x - (KERNEL_SIZE / 2))) + (4 * ((y + 1) - (KERNEL_SIZE / 2)))) + ch_in)) : 0)
+</pre>
+<table class="noborder">
+<col width="40">
+<tr><th>-1-</th><th>Status</th></tr>
+<tr class="uGreen"><td>0</td><td class="lf">Covered</td></tr>
+<tr class="uGreen"><td>1</td><td class="lf">Covered</td></tr>
+</table>
+<br clear=all>
+<pre class="code"> LINE       129
+ SUB-EXPRESSION 
+ Number  Term
+      1  ((x - (KERNEL_SIZE / 2)) &gt;= 0) &amp;&amp; 
+      2  ((x - (KERNEL_SIZE / 2)) &lt; FEATURE_MAP_WIDTH) &amp;&amp; 
+      3  (((y + 1) - (KERNEL_SIZE / 2)) &gt;= 0) &amp;&amp; 
+      4  (((y + 1) - (KERNEL_SIZE / 2)) &lt; FEATURE_MAP_HEIGHT))
+</pre>
+<table class="noborder">
+<col span="4" width="40">
+<tr><th>-1-</th><th>-2-</th><th>-3-</th><th>-4-</th><th>Status</th></tr>
+<tr class="uRed"><td>0</td><td>1</td><td>1</td><td>1</td><td class="lf">Not Covered</td></tr>
+<tr class="uGreen"><td>1</td><td>0</td><td>1</td><td>1</td><td class="lf">Covered</td></tr>
+<tr class="uRed"><td>1</td><td>1</td><td>0</td><td>1</td><td class="lf">Not Covered</td></tr>
+<tr class="uRed"><td>1</td><td>1</td><td>1</td><td>0</td><td class="lf">Not Covered</td></tr>
+<tr class="uGreen"><td>1</td><td>1</td><td>1</td><td>1</td><td class="lf">Covered</td></tr>
+</table>
+<br clear=all>
+<pre class="code"> LINE       130
+ EXPRESSION 
+ Number  Term
+      1  ((((x + 1) - (KERNEL_SIZE / 2)) &gt;= 0) &amp;&amp; (((x + 1) - (KERNEL_SIZE / 2)) &lt; FEATURE_MAP_WIDTH) &amp;&amp; (((y + 1) - (KERNEL_SIZE / 2)) &gt;= 0) &amp;&amp; (((y + 1) - (KERNEL_SIZE / 2)) &lt; FEATURE_MAP_HEIGHT)) ? ((((256 * ((x + 1) - (KERNEL_SIZE / 2))) + (4 * ((y + 1) - (KERNEL_SIZE / 2)))) + ch_in)) : 0)
+</pre>
+<table class="noborder">
+<col width="40">
+<tr><th>-1-</th><th>Status</th></tr>
+<tr class="uRed"><td>0</td><td class="lf">Not Covered</td></tr>
+<tr class="uGreen"><td>1</td><td class="lf">Covered</td></tr>
+</table>
+<br clear=all>
+<pre class="code"> LINE       130
+ SUB-EXPRESSION 
+ Number  Term
+      1  (((x + 1) - (KERNEL_SIZE / 2)) &gt;= 0) &amp;&amp; 
+      2  (((x + 1) - (KERNEL_SIZE / 2)) &lt; FEATURE_MAP_WIDTH) &amp;&amp; 
+      3  (((y + 1) - (KERNEL_SIZE / 2)) &gt;= 0) &amp;&amp; 
+      4  (((y + 1) - (KERNEL_SIZE / 2)) &lt; FEATURE_MAP_HEIGHT))
+</pre>
+<table class="noborder">
+<col span="4" width="40">
+<tr><th>-1-</th><th>-2-</th><th>-3-</th><th>-4-</th><th>Status</th></tr>
+<tr class="uRed"><td>0</td><td>1</td><td>1</td><td>1</td><td class="lf">Not Covered</td></tr>
+<tr class="uRed"><td>1</td><td>0</td><td>1</td><td>1</td><td class="lf">Not Covered</td></tr>
+<tr class="uRed"><td>1</td><td>1</td><td>0</td><td>1</td><td class="lf">Not Covered</td></tr>
+<tr class="uRed"><td>1</td><td>1</td><td>1</td><td>0</td><td class="lf">Not Covered</td></tr>
+<tr class="uGreen"><td>1</td><td>1</td><td>1</td><td>1</td><td class="lf">Covered</td></tr>
+</table>
+<br clear=all>
+<pre class="code"> LINE       131
+ EXPRESSION 
+ Number  Term
+      1  ((((x + 2) - (KERNEL_SIZE / 2)) &gt;= 0) &amp;&amp; (((x + 2) - (KERNEL_SIZE / 2)) &lt; FEATURE_MAP_WIDTH) &amp;&amp; (((y + 1) - (KERNEL_SIZE / 2)) &gt;= 0) &amp;&amp; (((y + 1) - (KERNEL_SIZE / 2)) &lt; FEATURE_MAP_HEIGHT)) ? ((((256 * ((x + 2) - (KERNEL_SIZE / 2))) + (4 * ((y + 1) - (KERNEL_SIZE / 2)))) + ch_in)) : 0)
+</pre>
+<table class="noborder">
+<col width="40">
+<tr><th>-1-</th><th>Status</th></tr>
+<tr class="uGreen"><td>0</td><td class="lf">Covered</td></tr>
+<tr class="uGreen"><td>1</td><td class="lf">Covered</td></tr>
+</table>
+<br clear=all>
+<pre class="code"> LINE       131
+ SUB-EXPRESSION 
+ Number  Term
+      1  (((x + 2) - (KERNEL_SIZE / 2)) &gt;= 0) &amp;&amp; 
+      2  (((x + 2) - (KERNEL_SIZE / 2)) &lt; FEATURE_MAP_WIDTH) &amp;&amp; 
+      3  (((y + 1) - (KERNEL_SIZE / 2)) &gt;= 0) &amp;&amp; 
+      4  (((y + 1) - (KERNEL_SIZE / 2)) &lt; FEATURE_MAP_HEIGHT))
+</pre>
+<table class="noborder">
+<col span="4" width="40">
+<tr><th>-1-</th><th>-2-</th><th>-3-</th><th>-4-</th><th>Status</th></tr>
+<tr class="uRed"><td>0</td><td>1</td><td>1</td><td>1</td><td class="lf">Not Covered</td></tr>
+<tr class="uGreen"><td>1</td><td>0</td><td>1</td><td>1</td><td class="lf">Covered</td></tr>
+<tr class="uRed"><td>1</td><td>1</td><td>0</td><td>1</td><td class="lf">Not Covered</td></tr>
+<tr class="uRed"><td>1</td><td>1</td><td>1</td><td>0</td><td class="lf">Not Covered</td></tr>
+<tr class="uGreen"><td>1</td><td>1</td><td>1</td><td>1</td><td class="lf">Covered</td></tr>
+</table>
+<br clear=all>
+<pre class="code"> LINE       132
+ EXPRESSION 
+ Number  Term
+      1  (((x - (KERNEL_SIZE / 2)) &gt;= 0) &amp;&amp; ((x - (KERNEL_SIZE / 2)) &lt; FEATURE_MAP_WIDTH) &amp;&amp; (((y + 2) - (KERNEL_SIZE / 2)) &gt;= 0) &amp;&amp; (((y + 2) - (KERNEL_SIZE / 2)) &lt; FEATURE_MAP_HEIGHT)) ? ((((256 * (x - (KERNEL_SIZE / 2))) + (4 * ((y + 2) - (KERNEL_SIZE / 2)))) + ch_in)) : 0)
+</pre>
+<table class="noborder">
+<col width="40">
+<tr><th>-1-</th><th>Status</th></tr>
+<tr class="uGreen"><td>0</td><td class="lf">Covered</td></tr>
+<tr class="uGreen"><td>1</td><td class="lf">Covered</td></tr>
+</table>
+<br clear=all>
+<pre class="code"> LINE       132
+ SUB-EXPRESSION 
+ Number  Term
+      1  ((x - (KERNEL_SIZE / 2)) &gt;= 0) &amp;&amp; 
+      2  ((x - (KERNEL_SIZE / 2)) &lt; FEATURE_MAP_WIDTH) &amp;&amp; 
+      3  (((y + 2) - (KERNEL_SIZE / 2)) &gt;= 0) &amp;&amp; 
+      4  (((y + 2) - (KERNEL_SIZE / 2)) &lt; FEATURE_MAP_HEIGHT))
+</pre>
+<table class="noborder">
+<col span="4" width="40">
+<tr><th>-1-</th><th>-2-</th><th>-3-</th><th>-4-</th><th>Status</th></tr>
+<tr class="uRed"><td>0</td><td>1</td><td>1</td><td>1</td><td class="lf">Not Covered</td></tr>
+<tr class="uGreen"><td>1</td><td>0</td><td>1</td><td>1</td><td class="lf">Covered</td></tr>
+<tr class="uRed"><td>1</td><td>1</td><td>0</td><td>1</td><td class="lf">Not Covered</td></tr>
+<tr class="uGreen"><td>1</td><td>1</td><td>1</td><td>0</td><td class="lf">Covered</td></tr>
+<tr class="uGreen"><td>1</td><td>1</td><td>1</td><td>1</td><td class="lf">Covered</td></tr>
+</table>
+<br clear=all>
+<pre class="code"> LINE       133
+ EXPRESSION 
+ Number  Term
+      1  ((((x + 1) - (KERNEL_SIZE / 2)) &gt;= 0) &amp;&amp; (((x + 1) - (KERNEL_SIZE / 2)) &lt; FEATURE_MAP_WIDTH) &amp;&amp; (((y + 2) - (KERNEL_SIZE / 2)) &gt;= 0) &amp;&amp; (((y + 2) - (KERNEL_SIZE / 2)) &lt; FEATURE_MAP_HEIGHT)) ? ((((256 * ((x + 1) - (KERNEL_SIZE / 2))) + (4 * ((y + 2) - (KERNEL_SIZE / 2)))) + ch_in)) : 0)
+</pre>
+<table class="noborder">
+<col width="40">
+<tr><th>-1-</th><th>Status</th></tr>
+<tr class="uGreen"><td>0</td><td class="lf">Covered</td></tr>
+<tr class="uGreen"><td>1</td><td class="lf">Covered</td></tr>
+</table>
+<br clear=all>
+<pre class="code"> LINE       133
+ SUB-EXPRESSION 
+ Number  Term
+      1  (((x + 1) - (KERNEL_SIZE / 2)) &gt;= 0) &amp;&amp; 
+      2  (((x + 1) - (KERNEL_SIZE / 2)) &lt; FEATURE_MAP_WIDTH) &amp;&amp; 
+      3  (((y + 2) - (KERNEL_SIZE / 2)) &gt;= 0) &amp;&amp; 
+      4  (((y + 2) - (KERNEL_SIZE / 2)) &lt; FEATURE_MAP_HEIGHT))
+</pre>
+<table class="noborder">
+<col span="4" width="40">
+<tr><th>-1-</th><th>-2-</th><th>-3-</th><th>-4-</th><th>Status</th></tr>
+<tr class="uRed"><td>0</td><td>1</td><td>1</td><td>1</td><td class="lf">Not Covered</td></tr>
+<tr class="uRed"><td>1</td><td>0</td><td>1</td><td>1</td><td class="lf">Not Covered</td></tr>
+<tr class="uRed"><td>1</td><td>1</td><td>0</td><td>1</td><td class="lf">Not Covered</td></tr>
+<tr class="uGreen"><td>1</td><td>1</td><td>1</td><td>0</td><td class="lf">Covered</td></tr>
+<tr class="uGreen"><td>1</td><td>1</td><td>1</td><td>1</td><td class="lf">Covered</td></tr>
+</table>
+<br clear=all>
+<pre class="code"> LINE       134
+ EXPRESSION 
+ Number  Term
+      1  ((((x + 2) - (KERNEL_SIZE / 2)) &gt;= 0) &amp;&amp; (((x + 2) - (KERNEL_SIZE / 2)) &lt; FEATURE_MAP_WIDTH) &amp;&amp; (((y + 2) - (KERNEL_SIZE / 2)) &gt;= 0) &amp;&amp; (((y + 2) - (KERNEL_SIZE / 2)) &lt; FEATURE_MAP_HEIGHT)) ? ((((256 * ((x + 2) - (KERNEL_SIZE / 2))) + (4 * ((y + 2) - (KERNEL_SIZE / 2)))) + ch_in)) : 0)
+</pre>
+<table class="noborder">
+<col width="40">
+<tr><th>-1-</th><th>Status</th></tr>
+<tr class="uGreen"><td>0</td><td class="lf">Covered</td></tr>
+<tr class="uGreen"><td>1</td><td class="lf">Covered</td></tr>
+</table>
+<br clear=all>
+<pre class="code"> LINE       134
+ SUB-EXPRESSION 
+ Number  Term
+      1  (((x + 2) - (KERNEL_SIZE / 2)) &gt;= 0) &amp;&amp; 
+      2  (((x + 2) - (KERNEL_SIZE / 2)) &lt; FEATURE_MAP_WIDTH) &amp;&amp; 
+      3  (((y + 2) - (KERNEL_SIZE / 2)) &gt;= 0) &amp;&amp; 
+      4  (((y + 2) - (KERNEL_SIZE / 2)) &lt; FEATURE_MAP_HEIGHT))
+</pre>
+<table class="noborder">
+<col span="4" width="40">
+<tr><th>-1-</th><th>-2-</th><th>-3-</th><th>-4-</th><th>Status</th></tr>
+<tr class="uRed"><td>0</td><td>1</td><td>1</td><td>1</td><td class="lf">Not Covered</td></tr>
+<tr class="uGreen"><td>1</td><td>0</td><td>1</td><td>1</td><td class="lf">Covered</td></tr>
+<tr class="uRed"><td>1</td><td>1</td><td>0</td><td>1</td><td class="lf">Not Covered</td></tr>
+<tr class="uGreen"><td>1</td><td>1</td><td>1</td><td>0</td><td class="lf">Covered</td></tr>
+<tr class="uGreen"><td>1</td><td>1</td><td>1</td><td>1</td><td class="lf">Covered</td></tr>
+</table>
+<br clear=all>
+<pre class="code"> LINE       146
+ EXPRESSION 
+ Number  Term
+      1  (((x - (KERNEL_SIZE / 2)) &gt;= 0) &amp;&amp; ((x - (KERNEL_SIZE / 2)) &lt; FEATURE_MAP_WIDTH) &amp;&amp; ((y - (KERNEL_SIZE / 2)) &gt;= 0) &amp;&amp; ((y - (KERNEL_SIZE / 2)) &lt; FEATURE_MAP_HEIGHT)) ? 1 : 0)
+</pre>
+<table class="noborder">
+<col width="40">
+<tr><th>-1-</th><th>Status</th></tr>
+<tr class="uGreen"><td>0</td><td class="lf">Covered</td></tr>
+<tr class="uGreen"><td>1</td><td class="lf">Covered</td></tr>
+</table>
+<br clear=all>
+<pre class="code"> LINE       146
+ SUB-EXPRESSION 
+ Number  Term
+      1  ((x - (KERNEL_SIZE / 2)) &gt;= 0) &amp;&amp; 
+      2  ((x - (KERNEL_SIZE / 2)) &lt; FEATURE_MAP_WIDTH) &amp;&amp; 
+      3  ((y - (KERNEL_SIZE / 2)) &gt;= 0) &amp;&amp; 
+      4  ((y - (KERNEL_SIZE / 2)) &lt; FEATURE_MAP_HEIGHT))
+</pre>
+<table class="noborder">
+<col span="4" width="40">
+<tr><th>-1-</th><th>-2-</th><th>-3-</th><th>-4-</th><th>Status</th></tr>
+<tr class="uRed"><td>0</td><td>1</td><td>1</td><td>1</td><td class="lf">Not Covered</td></tr>
+<tr class="uGreen"><td>1</td><td>0</td><td>1</td><td>1</td><td class="lf">Covered</td></tr>
+<tr class="uRed"><td>1</td><td>1</td><td>0</td><td>1</td><td class="lf">Not Covered</td></tr>
+<tr class="uGreen"><td>1</td><td>1</td><td>1</td><td>0</td><td class="lf">Covered</td></tr>
+<tr class="uGreen"><td>1</td><td>1</td><td>1</td><td>1</td><td class="lf">Covered</td></tr>
+</table>
+<br clear=all>
+<pre class="code"> LINE       147
+ EXPRESSION 
+ Number  Term
+      1  ((((x + 1) - (KERNEL_SIZE / 2)) &gt;= 0) &amp;&amp; (((x + 1) - (KERNEL_SIZE / 2)) &lt; FEATURE_MAP_WIDTH) &amp;&amp; ((y - (KERNEL_SIZE / 2)) &gt;= 0) &amp;&amp; ((y - (KERNEL_SIZE / 2)) &lt; FEATURE_MAP_HEIGHT)) ? 1 : 0)
+</pre>
+<table class="noborder">
+<col width="40">
+<tr><th>-1-</th><th>Status</th></tr>
+<tr class="uGreen"><td>0</td><td class="lf">Covered</td></tr>
+<tr class="uGreen"><td>1</td><td class="lf">Covered</td></tr>
+</table>
+<br clear=all>
+<pre class="code"> LINE       147
+ SUB-EXPRESSION 
+ Number  Term
+      1  (((x + 1) - (KERNEL_SIZE / 2)) &gt;= 0) &amp;&amp; 
+      2  (((x + 1) - (KERNEL_SIZE / 2)) &lt; FEATURE_MAP_WIDTH) &amp;&amp; 
+      3  ((y - (KERNEL_SIZE / 2)) &gt;= 0) &amp;&amp; 
+      4  ((y - (KERNEL_SIZE / 2)) &lt; FEATURE_MAP_HEIGHT))
+</pre>
+<table class="noborder">
+<col span="4" width="40">
+<tr><th>-1-</th><th>-2-</th><th>-3-</th><th>-4-</th><th>Status</th></tr>
+<tr class="uRed"><td>0</td><td>1</td><td>1</td><td>1</td><td class="lf">Not Covered</td></tr>
+<tr class="uRed"><td>1</td><td>0</td><td>1</td><td>1</td><td class="lf">Not Covered</td></tr>
+<tr class="uRed"><td>1</td><td>1</td><td>0</td><td>1</td><td class="lf">Not Covered</td></tr>
+<tr class="uGreen"><td>1</td><td>1</td><td>1</td><td>0</td><td class="lf">Covered</td></tr>
+<tr class="uGreen"><td>1</td><td>1</td><td>1</td><td>1</td><td class="lf">Covered</td></tr>
+</table>
+<br clear=all>
+<pre class="code"> LINE       148
+ EXPRESSION 
+ Number  Term
+      1  ((((x + 2) - (KERNEL_SIZE / 2)) &gt;= 0) &amp;&amp; (((x + 2) - (KERNEL_SIZE / 2)) &lt; FEATURE_MAP_WIDTH) &amp;&amp; ((y - (KERNEL_SIZE / 2)) &gt;= 0) &amp;&amp; ((y - (KERNEL_SIZE / 2)) &lt; FEATURE_MAP_HEIGHT)) ? 1 : 0)
+</pre>
+<table class="noborder">
+<col width="40">
+<tr><th>-1-</th><th>Status</th></tr>
+<tr class="uGreen"><td>0</td><td class="lf">Covered</td></tr>
+<tr class="uGreen"><td>1</td><td class="lf">Covered</td></tr>
+</table>
+<br clear=all>
+<pre class="code"> LINE       148
+ SUB-EXPRESSION 
+ Number  Term
+      1  (((x + 2) - (KERNEL_SIZE / 2)) &gt;= 0) &amp;&amp; 
+      2  (((x + 2) - (KERNEL_SIZE / 2)) &lt; FEATURE_MAP_WIDTH) &amp;&amp; 
+      3  ((y - (KERNEL_SIZE / 2)) &gt;= 0) &amp;&amp; 
+      4  ((y - (KERNEL_SIZE / 2)) &lt; FEATURE_MAP_HEIGHT))
+</pre>
+<table class="noborder">
+<col span="4" width="40">
+<tr><th>-1-</th><th>-2-</th><th>-3-</th><th>-4-</th><th>Status</th></tr>
+<tr class="uRed"><td>0</td><td>1</td><td>1</td><td>1</td><td class="lf">Not Covered</td></tr>
+<tr class="uGreen"><td>1</td><td>0</td><td>1</td><td>1</td><td class="lf">Covered</td></tr>
+<tr class="uRed"><td>1</td><td>1</td><td>0</td><td>1</td><td class="lf">Not Covered</td></tr>
+<tr class="uGreen"><td>1</td><td>1</td><td>1</td><td>0</td><td class="lf">Covered</td></tr>
+<tr class="uGreen"><td>1</td><td>1</td><td>1</td><td>1</td><td class="lf">Covered</td></tr>
+</table>
+<br clear=all>
+<pre class="code"> LINE       149
+ EXPRESSION 
+ Number  Term
+      1  (((x - (KERNEL_SIZE / 2)) &gt;= 0) &amp;&amp; ((x - (KERNEL_SIZE / 2)) &lt; FEATURE_MAP_WIDTH) &amp;&amp; (((y + 1) - (KERNEL_SIZE / 2)) &gt;= 0) &amp;&amp; (((y + 1) - (KERNEL_SIZE / 2)) &lt; FEATURE_MAP_HEIGHT)) ? 1 : 0)
+</pre>
+<table class="noborder">
+<col width="40">
+<tr><th>-1-</th><th>Status</th></tr>
+<tr class="uGreen"><td>0</td><td class="lf">Covered</td></tr>
+<tr class="uGreen"><td>1</td><td class="lf">Covered</td></tr>
+</table>
+<br clear=all>
+<pre class="code"> LINE       149
+ SUB-EXPRESSION 
+ Number  Term
+      1  ((x - (KERNEL_SIZE / 2)) &gt;= 0) &amp;&amp; 
+      2  ((x - (KERNEL_SIZE / 2)) &lt; FEATURE_MAP_WIDTH) &amp;&amp; 
+      3  (((y + 1) - (KERNEL_SIZE / 2)) &gt;= 0) &amp;&amp; 
+      4  (((y + 1) - (KERNEL_SIZE / 2)) &lt; FEATURE_MAP_HEIGHT))
+</pre>
+<table class="noborder">
+<col span="4" width="40">
+<tr><th>-1-</th><th>-2-</th><th>-3-</th><th>-4-</th><th>Status</th></tr>
+<tr class="uRed"><td>0</td><td>1</td><td>1</td><td>1</td><td class="lf">Not Covered</td></tr>
+<tr class="uGreen"><td>1</td><td>0</td><td>1</td><td>1</td><td class="lf">Covered</td></tr>
+<tr class="uRed"><td>1</td><td>1</td><td>0</td><td>1</td><td class="lf">Not Covered</td></tr>
+<tr class="uRed"><td>1</td><td>1</td><td>1</td><td>0</td><td class="lf">Not Covered</td></tr>
+<tr class="uGreen"><td>1</td><td>1</td><td>1</td><td>1</td><td class="lf">Covered</td></tr>
+</table>
+<br clear=all>
+<pre class="code"> LINE       150
+ EXPRESSION 
+ Number  Term
+      1  ((((x + 1) - (KERNEL_SIZE / 2)) &gt;= 0) &amp;&amp; (((x + 1) - (KERNEL_SIZE / 2)) &lt; FEATURE_MAP_WIDTH) &amp;&amp; (((y + 1) - (KERNEL_SIZE / 2)) &gt;= 0) &amp;&amp; (((y + 1) - (KERNEL_SIZE / 2)) &lt; FEATURE_MAP_HEIGHT)) ? 1 : 0)
+</pre>
+<table class="noborder">
+<col width="40">
+<tr><th>-1-</th><th>Status</th></tr>
+<tr class="uRed"><td>0</td><td class="lf">Not Covered</td></tr>
+<tr class="uGreen"><td>1</td><td class="lf">Covered</td></tr>
+</table>
+<br clear=all>
+<pre class="code"> LINE       150
+ SUB-EXPRESSION 
+ Number  Term
+      1  (((x + 1) - (KERNEL_SIZE / 2)) &gt;= 0) &amp;&amp; 
+      2  (((x + 1) - (KERNEL_SIZE / 2)) &lt; FEATURE_MAP_WIDTH) &amp;&amp; 
+      3  (((y + 1) - (KERNEL_SIZE / 2)) &gt;= 0) &amp;&amp; 
+      4  (((y + 1) - (KERNEL_SIZE / 2)) &lt; FEATURE_MAP_HEIGHT))
+</pre>
+<table class="noborder">
+<col span="4" width="40">
+<tr><th>-1-</th><th>-2-</th><th>-3-</th><th>-4-</th><th>Status</th></tr>
+<tr class="uRed"><td>0</td><td>1</td><td>1</td><td>1</td><td class="lf">Not Covered</td></tr>
+<tr class="uRed"><td>1</td><td>0</td><td>1</td><td>1</td><td class="lf">Not Covered</td></tr>
+<tr class="uRed"><td>1</td><td>1</td><td>0</td><td>1</td><td class="lf">Not Covered</td></tr>
+<tr class="uRed"><td>1</td><td>1</td><td>1</td><td>0</td><td class="lf">Not Covered</td></tr>
+<tr class="uGreen"><td>1</td><td>1</td><td>1</td><td>1</td><td class="lf">Covered</td></tr>
+</table>
+<br clear=all>
+<pre class="code"> LINE       151
+ EXPRESSION 
+ Number  Term
+      1  ((((x + 2) - (KERNEL_SIZE / 2)) &gt;= 0) &amp;&amp; (((x + 2) - (KERNEL_SIZE / 2)) &lt; FEATURE_MAP_WIDTH) &amp;&amp; (((y + 1) - (KERNEL_SIZE / 2)) &gt;= 0) &amp;&amp; (((y + 1) - (KERNEL_SIZE / 2)) &lt; FEATURE_MAP_HEIGHT)) ? 1 : 0)
+</pre>
+<table class="noborder">
+<col width="40">
+<tr><th>-1-</th><th>Status</th></tr>
+<tr class="uGreen"><td>0</td><td class="lf">Covered</td></tr>
+<tr class="uGreen"><td>1</td><td class="lf">Covered</td></tr>
+</table>
+<br clear=all>
+<pre class="code"> LINE       151
+ SUB-EXPRESSION 
+ Number  Term
+      1  (((x + 2) - (KERNEL_SIZE / 2)) &gt;= 0) &amp;&amp; 
+      2  (((x + 2) - (KERNEL_SIZE / 2)) &lt; FEATURE_MAP_WIDTH) &amp;&amp; 
+      3  (((y + 1) - (KERNEL_SIZE / 2)) &gt;= 0) &amp;&amp; 
+      4  (((y + 1) - (KERNEL_SIZE / 2)) &lt; FEATURE_MAP_HEIGHT))
+</pre>
+<table class="noborder">
+<col span="4" width="40">
+<tr><th>-1-</th><th>-2-</th><th>-3-</th><th>-4-</th><th>Status</th></tr>
+<tr class="uRed"><td>0</td><td>1</td><td>1</td><td>1</td><td class="lf">Not Covered</td></tr>
+<tr class="uGreen"><td>1</td><td>0</td><td>1</td><td>1</td><td class="lf">Covered</td></tr>
+<tr class="uRed"><td>1</td><td>1</td><td>0</td><td>1</td><td class="lf">Not Covered</td></tr>
+<tr class="uRed"><td>1</td><td>1</td><td>1</td><td>0</td><td class="lf">Not Covered</td></tr>
+<tr class="uGreen"><td>1</td><td>1</td><td>1</td><td>1</td><td class="lf">Covered</td></tr>
+</table>
+<br clear=all>
+<pre class="code"> LINE       152
+ EXPRESSION 
+ Number  Term
+      1  (((x - (KERNEL_SIZE / 2)) &gt;= 0) &amp;&amp; ((x - (KERNEL_SIZE / 2)) &lt; FEATURE_MAP_WIDTH) &amp;&amp; (((y + 2) - (KERNEL_SIZE / 2)) &gt;= 0) &amp;&amp; (((y + 2) - (KERNEL_SIZE / 2)) &lt; FEATURE_MAP_HEIGHT)) ? 1 : 0)
+</pre>
+<table class="noborder">
+<col width="40">
+<tr><th>-1-</th><th>Status</th></tr>
+<tr class="uGreen"><td>0</td><td class="lf">Covered</td></tr>
+<tr class="uGreen"><td>1</td><td class="lf">Covered</td></tr>
+</table>
+<br clear=all>
+<pre class="code"> LINE       152
+ SUB-EXPRESSION 
+ Number  Term
+      1  ((x - (KERNEL_SIZE / 2)) &gt;= 0) &amp;&amp; 
+      2  ((x - (KERNEL_SIZE / 2)) &lt; FEATURE_MAP_WIDTH) &amp;&amp; 
+      3  (((y + 2) - (KERNEL_SIZE / 2)) &gt;= 0) &amp;&amp; 
+      4  (((y + 2) - (KERNEL_SIZE / 2)) &lt; FEATURE_MAP_HEIGHT))
+</pre>
+<table class="noborder">
+<col span="4" width="40">
+<tr><th>-1-</th><th>-2-</th><th>-3-</th><th>-4-</th><th>Status</th></tr>
+<tr class="uRed"><td>0</td><td>1</td><td>1</td><td>1</td><td class="lf">Not Covered</td></tr>
+<tr class="uGreen"><td>1</td><td>0</td><td>1</td><td>1</td><td class="lf">Covered</td></tr>
+<tr class="uRed"><td>1</td><td>1</td><td>0</td><td>1</td><td class="lf">Not Covered</td></tr>
+<tr class="uGreen"><td>1</td><td>1</td><td>1</td><td>0</td><td class="lf">Covered</td></tr>
+<tr class="uGreen"><td>1</td><td>1</td><td>1</td><td>1</td><td class="lf">Covered</td></tr>
+</table>
+<br clear=all>
+<pre class="code"> LINE       153
+ EXPRESSION 
+ Number  Term
+      1  ((((x + 1) - (KERNEL_SIZE / 2)) &gt;= 0) &amp;&amp; (((x + 1) - (KERNEL_SIZE / 2)) &lt; FEATURE_MAP_WIDTH) &amp;&amp; (((y + 2) - (KERNEL_SIZE / 2)) &gt;= 0) &amp;&amp; (((y + 2) - (KERNEL_SIZE / 2)) &lt; FEATURE_MAP_HEIGHT)) ? 1 : 0)
+</pre>
+<table class="noborder">
+<col width="40">
+<tr><th>-1-</th><th>Status</th></tr>
+<tr class="uGreen"><td>0</td><td class="lf">Covered</td></tr>
+<tr class="uGreen"><td>1</td><td class="lf">Covered</td></tr>
+</table>
+<br clear=all>
+<pre class="code"> LINE       153
+ SUB-EXPRESSION 
+ Number  Term
+      1  (((x + 1) - (KERNEL_SIZE / 2)) &gt;= 0) &amp;&amp; 
+      2  (((x + 1) - (KERNEL_SIZE / 2)) &lt; FEATURE_MAP_WIDTH) &amp;&amp; 
+      3  (((y + 2) - (KERNEL_SIZE / 2)) &gt;= 0) &amp;&amp; 
+      4  (((y + 2) - (KERNEL_SIZE / 2)) &lt; FEATURE_MAP_HEIGHT))
+</pre>
+<table class="noborder">
+<col span="4" width="40">
+<tr><th>-1-</th><th>-2-</th><th>-3-</th><th>-4-</th><th>Status</th></tr>
+<tr class="uRed"><td>0</td><td>1</td><td>1</td><td>1</td><td class="lf">Not Covered</td></tr>
+<tr class="uRed"><td>1</td><td>0</td><td>1</td><td>1</td><td class="lf">Not Covered</td></tr>
+<tr class="uRed"><td>1</td><td>1</td><td>0</td><td>1</td><td class="lf">Not Covered</td></tr>
+<tr class="uGreen"><td>1</td><td>1</td><td>1</td><td>0</td><td class="lf">Covered</td></tr>
+<tr class="uGreen"><td>1</td><td>1</td><td>1</td><td>1</td><td class="lf">Covered</td></tr>
+</table>
+<br clear=all>
+<pre class="code"> LINE       154
+ EXPRESSION 
+ Number  Term
+      1  ((((x + 2) - (KERNEL_SIZE / 2)) &gt;= 0) &amp;&amp; (((x + 2) - (KERNEL_SIZE / 2)) &lt; FEATURE_MAP_WIDTH) &amp;&amp; (((y + 2) - (KERNEL_SIZE / 2)) &gt;= 0) &amp;&amp; (((y + 2) - (KERNEL_SIZE / 2)) &lt; FEATURE_MAP_HEIGHT)) ? 1 : 0)
+</pre>
+<table class="noborder">
+<col width="40">
+<tr><th>-1-</th><th>Status</th></tr>
+<tr class="uGreen"><td>0</td><td class="lf">Covered</td></tr>
+<tr class="uGreen"><td>1</td><td class="lf">Covered</td></tr>
+</table>
+<br clear=all>
+<pre class="code"> LINE       154
+ SUB-EXPRESSION 
+ Number  Term
+      1  (((x + 2) - (KERNEL_SIZE / 2)) &gt;= 0) &amp;&amp; 
+      2  (((x + 2) - (KERNEL_SIZE / 2)) &lt; FEATURE_MAP_WIDTH) &amp;&amp; 
+      3  (((y + 2) - (KERNEL_SIZE / 2)) &gt;= 0) &amp;&amp; 
+      4  (((y + 2) - (KERNEL_SIZE / 2)) &lt; FEATURE_MAP_HEIGHT))
+</pre>
+<table class="noborder">
+<col span="4" width="40">
+<tr><th>-1-</th><th>-2-</th><th>-3-</th><th>-4-</th><th>Status</th></tr>
+<tr class="uRed"><td>0</td><td>1</td><td>1</td><td>1</td><td class="lf">Not Covered</td></tr>
+<tr class="uGreen"><td>1</td><td>0</td><td>1</td><td>1</td><td class="lf">Covered</td></tr>
+<tr class="uRed"><td>1</td><td>1</td><td>0</td><td>1</td><td class="lf">Not Covered</td></tr>
+<tr class="uGreen"><td>1</td><td>1</td><td>1</td><td>0</td><td class="lf">Covered</td></tr>
+<tr class="uGreen"><td>1</td><td>1</td><td>1</td><td>1</td><td class="lf">Covered</td></tr>
+</table>
+<br clear=all>
+<pre class="code"> LINE       159
+ EXPRESSION (reset_x ? 0 : ((x + 1)))
+             ---1---
+</pre>
+<table class="noborder">
+<col width="40">
+<tr><th>-1-</th><th>Status</th></tr>
+<tr class="uGreen"><td>0</td><td class="lf">Covered</td></tr>
+<tr class="uGreen"><td>1</td><td class="lf">Covered</td></tr>
+</table>
+<br clear=all>
+<pre class="code"> LINE       160
+ EXPRESSION (reset_y ? 0 : ((y + 1)))
+             ---1---
+</pre>
+<table class="noborder">
+<col width="40">
+<tr><th>-1-</th><th>Status</th></tr>
+<tr class="uGreen"><td>0</td><td class="lf">Covered</td></tr>
+<tr class="uGreen"><td>1</td><td class="lf">Covered</td></tr>
+</table>
+<br clear=all>
+<pre class="code"> LINE       161
+ EXPRESSION (reset_ch_in ? 0 : ((ch_in + 1)))
+             -----1-----
+</pre>
+<table class="noborder">
+<col width="40">
+<tr><th>-1-</th><th>Status</th></tr>
+<tr class="uGreen"><td>0</td><td class="lf">Covered</td></tr>
+<tr class="uGreen"><td>1</td><td class="lf">Covered</td></tr>
+</table>
+<br clear=all>
+<pre class="code"> LINE       162
+ EXPRESSION (reset_ch_out ? 0 : ((ch_out + 1)))
+             ------1-----
+</pre>
+<table class="noborder">
+<col width="40">
+<tr><th>-1-</th><th>Status</th></tr>
+<tr class="uGreen"><td>0</td><td class="lf">Covered</td></tr>
+<tr class="uGreen"><td>1</td><td class="lf">Covered</td></tr>
+</table>
+<br clear=all>
+<pre class="code"> LINE       190
+ EXPRESSION (mac_valid_3 &amp;&amp; last_ch_out)
+             -----1-----    -----2-----
+</pre>
+<table class="noborder">
+<col span="2" width="40">
+<tr><th>-1-</th><th>-2-</th><th>Status</th></tr>
+<tr class="uGreen"><td>0</td><td>1</td><td class="lf">Covered</td></tr>
+<tr class="uGreen"><td>1</td><td>0</td><td class="lf">Covered</td></tr>
+<tr class="uGreen"><td>1</td><td>1</td><td class="lf">Covered</td></tr>
+</table>
+<br clear=all>
+<pre class="code"> LINE       191
+ EXPRESSION (mac_valid_3 &amp;&amp; last_ch_out &amp;&amp; last_ch_in)
+             -----1-----    -----2-----    -----3----
+</pre>
+<table class="noborder">
+<col span="3" width="40">
+<tr><th>-1-</th><th>-2-</th><th>-3-</th><th>Status</th></tr>
+<tr class="uGreen"><td>0</td><td>1</td><td>1</td><td class="lf">Covered</td></tr>
+<tr class="uGreen"><td>1</td><td>0</td><td>1</td><td class="lf">Covered</td></tr>
+<tr class="uGreen"><td>1</td><td>1</td><td>0</td><td class="lf">Covered</td></tr>
+<tr class="uGreen"><td>1</td><td>1</td><td>1</td><td class="lf">Covered</td></tr>
+</table>
+<br clear=all>
+<pre class="code"> LINE       192
+ EXPRESSION (mac_valid_3 &amp;&amp; last_ch_out &amp;&amp; last_ch_in &amp;&amp; last_y)
+             -----1-----    -----2-----    -----3----    ---4--
+</pre>
+<table class="noborder">
+<col span="4" width="40">
+<tr><th>-1-</th><th>-2-</th><th>-3-</th><th>-4-</th><th>Status</th></tr>
+<tr class="uGreen"><td>0</td><td>1</td><td>1</td><td>1</td><td class="lf">Covered</td></tr>
+<tr class="uGreen"><td>1</td><td>0</td><td>1</td><td>1</td><td class="lf">Covered</td></tr>
+<tr class="uGreen"><td>1</td><td>1</td><td>0</td><td>1</td><td class="lf">Covered</td></tr>
+<tr class="uGreen"><td>1</td><td>1</td><td>1</td><td>0</td><td class="lf">Covered</td></tr>
+<tr class="uGreen"><td>1</td><td>1</td><td>1</td><td>1</td><td class="lf">Covered</td></tr>
+</table>
+<br clear=all>
+<pre class="code"> LINE       195
+ EXPRESSION (last_ch_out &amp;&amp; last_ch_in &amp;&amp; last_y &amp;&amp; last_x)
+             -----1-----    -----2----    ---3--    ---4--
+</pre>
+<table class="noborder">
+<col span="4" width="40">
+<tr><th>-1-</th><th>-2-</th><th>-3-</th><th>-4-</th><th>Status</th></tr>
+<tr class="uGreen"><td>0</td><td>1</td><td>1</td><td>1</td><td class="lf">Covered</td></tr>
+<tr class="uGreen"><td>1</td><td>0</td><td>1</td><td>1</td><td class="lf">Covered</td></tr>
+<tr class="uGreen"><td>1</td><td>1</td><td>0</td><td>1</td><td class="lf">Covered</td></tr>
+<tr class="uGreen"><td>1</td><td>1</td><td>1</td><td>0</td><td class="lf">Covered</td></tr>
+<tr class="uGreen"><td>1</td><td>1</td><td>1</td><td>1</td><td class="lf">Covered</td></tr>
+</table>
+<br clear=all>
+<pre class="code"> LINE       214
+ EXPRESSION (mac_valid_3 &amp;&amp; last_ch_in)
+             -----1-----    -----2----
+</pre>
+<table class="noborder">
+<col span="2" width="40">
+<tr><th>-1-</th><th>-2-</th><th>Status</th></tr>
+<tr class="uGreen"><td>0</td><td>1</td><td class="lf">Covered</td></tr>
+<tr class="uGreen"><td>1</td><td>0</td><td class="lf">Covered</td></tr>
+<tr class="uGreen"><td>1</td><td>1</td><td class="lf">Covered</td></tr>
+</table>
+<br clear=all>
+<pre class="code"> LINE       235
+ EXPRESSION ((amem_addr &lt;= 14'h3fff) ? amem_c : 0)
+             -----------1-----------
+</pre>
+<table class="noborder">
+<col width="40">
+<tr><th>-1-</th><th>Status</th></tr>
+<tr class="uRed"><td>0</td><td class="lf">Not Covered</td></tr>
+<tr class="uGreen"><td>1</td><td class="lf">Covered</td></tr>
+</table>
+<br clear=all>
+<pre class="code"> LINE       241
+ EXPRESSION ((bmem_addr &lt;= 11'h47f) ? bmem_c : 0)
+             -----------1----------
+</pre>
+<table class="noborder">
+<col width="40">
+<tr><th>-1-</th><th>Status</th></tr>
+<tr class="uGreen"><td>0</td><td class="lf">Covered</td></tr>
+<tr class="uGreen"><td>1</td><td class="lf">Covered</td></tr>
+</table>
+<br clear=all>
+<pre class="code"> LINE       256
+ EXPRESSION ((initcount == 6'h23) ? 0 : initcount_fsm)
+             ----------1---------
+</pre>
+<table class="noborder">
+<col width="40">
+<tr><th>-1-</th><th>Status</th></tr>
+<tr class="uGreen"><td>0</td><td class="lf">Covered</td></tr>
+<tr class="uGreen"><td>1</td><td class="lf">Covered</td></tr>
+</table>
+<br clear=all>
+<pre class="code"> LINE       284
+ EXPRESSION (start ? AF : IDLE)
+             --1--
+</pre>
+<table class="noborder">
+<col width="40">
+<tr><th>-1-</th><th>Status</th></tr>
+<tr class="uGreen"><td>0</td><td class="lf">Covered</td></tr>
+<tr class="uGreen"><td>1</td><td class="lf">Covered</td></tr>
+</table>
+<br clear=all>
+<pre class="code"> LINE       296
+ EXPRESSION ((amem_addr == 14'h3fff) ? BF : AF)
+             -----------1-----------
+</pre>
+<table class="noborder">
+<col width="40">
+<tr><th>-1-</th><th>Status</th></tr>
+<tr class="uGreen"><td>0</td><td class="lf">Covered</td></tr>
+<tr class="uGreen"><td>1</td><td class="lf">Covered</td></tr>
+</table>
+<br clear=all>
+<pre class="code"> LINE       308
+ EXPRESSION ((bmem_addr == 11'h47f) ? init : BF)
+             -----------1----------
+</pre>
+<table class="noborder">
+<col width="40">
+<tr><th>-1-</th><th>Status</th></tr>
+<tr class="uGreen"><td>0</td><td class="lf">Covered</td></tr>
+<tr class="uGreen"><td>1</td><td class="lf">Covered</td></tr>
+</table>
+<br clear=all>
+<pre class="code"> LINE       319
+ EXPRESSION ((initcount == 6'h21) ? FETCH_1 : init)
+             ----------1---------
+</pre>
+<table class="noborder">
+<col width="40">
+<tr><th>-1-</th><th>Status</th></tr>
+<tr class="uGreen"><td>0</td><td class="lf">Covered</td></tr>
+<tr class="uGreen"><td>1</td><td class="lf">Covered</td></tr>
+</table>
+<br clear=all>
+<pre class="code"> LINE       322
+ EXPRESSION ((ch_out == 0) ? 1 : 0)
+             ------1------
+</pre>
+<table class="noborder">
+<col width="40">
+<tr><th>-1-</th><th>Status</th></tr>
+<tr class="uGreen"><td>0</td><td class="lf">Covered</td></tr>
+<tr class="uGreen"><td>1</td><td class="lf">Covered</td></tr>
+</table>
+<br clear=all>
+<pre class="code"> LINE       357
+ EXPRESSION (last_overall ? IDLE : (((ch_out == 32'h0000001f) &amp;&amp; (ch_in == 32'h00000003)) ? init : FETCH_1))
+             ------1-----
+</pre>
+<table class="noborder">
+<col width="40">
+<tr><th>-1-</th><th>Status</th></tr>
+<tr class="uGreen"><td>0</td><td class="lf">Covered</td></tr>
+<tr class="uGreen"><td>1</td><td class="lf">Covered</td></tr>
+</table>
+<br clear=all>
+<pre class="code"> LINE       357
+ SUB-EXPRESSION (((ch_out == 32'h0000001f) &amp;&amp; (ch_in == 32'h00000003)) ? init : FETCH_1)
+                 --------------------------1--------------------------
+</pre>
+<table class="noborder">
+<col width="40">
+<tr><th>-1-</th><th>Status</th></tr>
+<tr class="uGreen"><td>0</td><td class="lf">Covered</td></tr>
+<tr class="uGreen"><td>1</td><td class="lf">Covered</td></tr>
+</table>
+<br clear=all>
+<pre class="code"> LINE       357
+ SUB-EXPRESSION ((ch_out == 32'h0000001f) &amp;&amp; (ch_in == 32'h00000003))
+                 ------------1-----------    -----------2-----------
+</pre>
+<table class="noborder">
+<col span="2" width="40">
+<tr><th>-1-</th><th>-2-</th><th>Status</th></tr>
+<tr class="uGreen"><td>0</td><td>1</td><td class="lf">Covered</td></tr>
+<tr class="uGreen"><td>1</td><td>0</td><td class="lf">Covered</td></tr>
+<tr class="uGreen"><td>1</td><td>1</td><td class="lf">Covered</td></tr>
+</table>
+<hr>
+<a name="Toggle"></a>
+Toggle Coverage for Module : <a href="mod4.html" >controller_fsm</a><br clear=all>
+<table align=left class="noborder">
+<tr>
+<th nowrap width=120></th><th nowrap width=80>Total</th><th nowrap width=80>Covered</th><th nowrap width=80>Percent</th></tr><tr class="s7">
+<td>Totals</td>
+<td class="rt">138</td>
+<td class="rt">103</td>
+<td class="rt">74.64 </td>
+</tr><tr class="s7">
+<td>Total Bits</td>
+<td class="rt">2492</td>
+<td class="rt">1746</td>
+<td class="rt">70.06 </td>
+</tr><tr class="s7">
+<td nowrap>Total Bits 0->1</td>
+<td class="rt">1246</td>
+<td class="rt">874</td>
+<td class="rt">70.14 </td>
+</tr><tr class="s6">
+<td nowrap>Total Bits 1->0</td>
+<td class="rt">1246</td>
+<td class="rt">872</td>
+<td class="rt">69.98 </td>
+</tr></table><br clear=all>
+<table align=left class="noborder">
+<tr>
+<th nowrap width=120></th><th nowrap width=80></th><th nowrap width=80></th><th nowrap width=80></th></tr><tr class="s8">
+<td>Ports</td>
+<td class="rt">49</td>
+<td class="rt">44</td>
+<td class="rt">89.80 </td>
+</tr><tr class="s7">
+<td>Port Bits</td>
+<td class="rt">744</td>
+<td class="rt">582</td>
+<td class="rt">78.23 </td>
+</tr><tr class="s7">
+<td nowrap>Port Bits 0->1</td>
+<td class="rt">372</td>
+<td class="rt">292</td>
+<td class="rt">78.49 </td>
+</tr><tr class="s7">
+<td nowrap>Port Bits 1->0</td>
+<td class="rt">372</td>
+<td class="rt">290</td>
+<td class="rt">77.96 </td>
+</tr></table><br clear=all>
+<table align=left class="noborder">
+<tr>
+<th nowrap width=120></th><th nowrap width=80></th><th nowrap width=80></th><th nowrap width=80></th></tr><tr class="s6">
+<td>Signals</td>
+<td class="rt">89</td>
+<td class="rt">59</td>
+<td class="rt">66.29 </td>
+</tr><tr class="s6">
+<td>Signal Bits</td>
+<td class="rt">1748</td>
+<td class="rt">1164</td>
+<td class="rt">66.59 </td>
+</tr><tr class="s6">
+<td nowrap>Signal Bits 0->1</td>
+<td class="rt">874</td>
+<td class="rt">582</td>
+<td class="rt">66.59 </td>
+</tr><tr class="s6">
+<td nowrap>Signal Bits 1->0</td>
+<td class="rt">874</td>
+<td class="rt">582</td>
+<td class="rt">66.59 </td>
+</tr></table><br clear=all>
+<table align=left class="sortable noborder">
+<caption><b>Port Details</b></caption>
+<tr class="sortablehead">
+<td class="alfsrt">Name</td><td class="alfsrt">Toggle</td><td class="alfsrt">Toggle 1->0</td><td class="alfsrt">Toggle 0->1</td><td class="alfsrt">Direction</td></tr><tr>
+<td>clk</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td>INPUT</td>
+</tr><tr>
+<td>arst_n_in</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s9 cl">Yes</td>
+<td>INPUT</td>
+</tr><tr>
+<td>start</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td>INPUT</td>
+</tr><tr>
+<td>running</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td>OUTPUT</td>
+</tr><tr>
+<td>a_valid</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td>INPUT</td>
+</tr><tr>
+<td>b_valid</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td>INPUT</td>
+</tr><tr>
+<td>b_ready</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td>OUTPUT</td>
+</tr><tr>
+<td>a_ready</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td>OUTPUT</td>
+</tr><tr>
+<td>write_a</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td>OUTPUT</td>
+</tr><tr>
+<td>write_b</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td>OUTPUT</td>
+</tr><tr>
+<td>mac_valid_1</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td>OUTPUT</td>
+</tr><tr>
+<td>mac_valid_2</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td>OUTPUT</td>
+</tr><tr>
+<td>mac_valid_3</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td>OUTPUT</td>
+</tr><tr>
+<td>XXX</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td>OUTPUT</td>
+</tr><tr>
+<td>output_valid</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td>OUTPUT</td>
+</tr><tr>
+<td>output_x[4:0]</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td>OUTPUT</td>
+</tr><tr>
+<td>output_x[5]</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s9 cl">Yes</td>
+<td>OUTPUT</td>
+</tr><tr>
+<td>output_x[31:6]</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td>OUTPUT</td>
+</tr><tr>
+<td>output_y[5:0]</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td>OUTPUT</td>
+</tr><tr>
+<td>output_y[31:6]</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td>OUTPUT</td>
+</tr><tr>
+<td>output_ch[4:0]</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td>OUTPUT</td>
+</tr><tr>
+<td>output_ch[31:5]</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td>OUTPUT</td>
+</tr><tr>
+<td>amem_addr[13:0]</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td>OUTPUT</td>
+</tr><tr>
+<td>amem_write_en</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td>OUTPUT</td>
+</tr><tr>
+<td>bmem_addr[10:0]</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td>OUTPUT</td>
+</tr><tr>
+<td>bmem_write_en</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td>OUTPUT</td>
+</tr><tr>
+<td>a1_addr[13:0]</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td>OUTPUT</td>
+</tr><tr>
+<td>a2_addr[13:0]</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td>OUTPUT</td>
+</tr><tr>
+<td>a3_addr[13:0]</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td>OUTPUT</td>
+</tr><tr>
+<td>a4_addr[13:0]</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td>OUTPUT</td>
+</tr><tr>
+<td>a5_addr[13:0]</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td>OUTPUT</td>
+</tr><tr>
+<td>a6_addr[13:0]</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td>OUTPUT</td>
+</tr><tr>
+<td>a7_addr[13:0]</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td>OUTPUT</td>
+</tr><tr>
+<td>a8_addr[13:0]</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td>OUTPUT</td>
+</tr><tr>
+<td>a9_addr[13:0]</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td>OUTPUT</td>
+</tr><tr>
+<td>b1_addr[10:0]</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td>OUTPUT</td>
+</tr><tr>
+<td>b2_addr[10:0]</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td>OUTPUT</td>
+</tr><tr>
+<td>b3_addr[10:0]</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td>OUTPUT</td>
+</tr><tr>
+<td>b4_addr[10:0]</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td>OUTPUT</td>
+</tr><tr>
+<td>b5_addr[10:0]</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td>OUTPUT</td>
+</tr><tr>
+<td>b6_addr[10:0]</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td>OUTPUT</td>
+</tr><tr>
+<td>b7_addr[10:0]</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td>OUTPUT</td>
+</tr><tr>
+<td>b8_addr[10:0]</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td>OUTPUT</td>
+</tr><tr>
+<td>b9_addr[10:0]</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td>OUTPUT</td>
+</tr><tr>
+<td>a1_sel</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td>OUTPUT</td>
+</tr><tr>
+<td>a2_sel</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td>OUTPUT</td>
+</tr><tr>
+<td>a3_sel</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td>OUTPUT</td>
+</tr><tr>
+<td>a4_sel</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td>OUTPUT</td>
+</tr><tr>
+<td>a5_sel</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td>OUTPUT</td>
+</tr><tr>
+<td>a6_sel</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td>OUTPUT</td>
+</tr><tr>
+<td>a7_sel</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td>OUTPUT</td>
+</tr><tr>
+<td>a8_sel</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td>OUTPUT</td>
+</tr><tr>
+<td>a9_sel</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td>OUTPUT</td>
+</tr></table><br clear=all>
+<table align=left class="sortable noborder">
+<caption><b>Signal Details</b></caption>
+<tr class="sortablehead">
+<td class="alfsrt">Name</td><td class="alfsrt">Toggle</td><td class="alfsrt">Toggle 1->0</td><td class="alfsrt">Toggle 0->1</td></tr><tr>
+<td>x_next[5:0]</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+</tr><tr>
+<td>x_next[31:6]</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+</tr><tr>
+<td>x[5:0]</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+</tr><tr>
+<td>x[31:6]</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+</tr><tr>
+<td>x_we</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+</tr><tr>
+<td>y_next[5:0]</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+</tr><tr>
+<td>y_next[31:6]</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+</tr><tr>
+<td>y[5:0]</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+</tr><tr>
+<td>y[31:6]</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+</tr><tr>
+<td>y_we</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+</tr><tr>
+<td>ch_in_next[1:0]</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+</tr><tr>
+<td>ch_in_next[31:2]</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+</tr><tr>
+<td>ch_in[1:0]</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+</tr><tr>
+<td>ch_in[31:2]</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+</tr><tr>
+<td>ch_in_we</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+</tr><tr>
+<td>ch_out_next[4:0]</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+</tr><tr>
+<td>ch_out_next[31:5]</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+</tr><tr>
+<td>ch_out[4:0]</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+</tr><tr>
+<td>ch_out[31:5]</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+</tr><tr>
+<td>ch_out_we</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+</tr><tr>
+<td>a1_addrd_next[13:0]</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+</tr><tr>
+<td>a1_addrd[13:0]</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+</tr><tr>
+<td>a1_addrd_we</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+</tr><tr>
+<td>a2_addrd_next[13:0]</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+</tr><tr>
+<td>a2_addrd[13:0]</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+</tr><tr>
+<td>a2_addrd_we</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+</tr><tr>
+<td>a3_addrd_next[13:0]</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+</tr><tr>
+<td>a3_addrd[13:0]</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+</tr><tr>
+<td>a3_addrd_we</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+</tr><tr>
+<td>a4_addrd_next[13:0]</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+</tr><tr>
+<td>a4_addrd[13:0]</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+</tr><tr>
+<td>a4_addrd_we</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+</tr><tr>
+<td>a5_addrd_next[13:0]</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+</tr><tr>
+<td>a5_addrd[13:0]</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+</tr><tr>
+<td>a5_addrd_we</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+</tr><tr>
+<td>a6_addrd_next[13:0]</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+</tr><tr>
+<td>a6_addrd[13:0]</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+</tr><tr>
+<td>a6_addrd_we</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+</tr><tr>
+<td>a7_addrd_next[13:0]</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+</tr><tr>
+<td>a7_addrd[13:0]</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+</tr><tr>
+<td>a7_addrd_we</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+</tr><tr>
+<td>a8_addrd_next[13:0]</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+</tr><tr>
+<td>a8_addrd[13:0]</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+</tr><tr>
+<td>a8_addrd_we</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+</tr><tr>
+<td>a9_addrd_next[13:0]</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+</tr><tr>
+<td>a9_addrd[13:0]</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+</tr><tr>
+<td>a9_addrd_we</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+</tr><tr>
+<td>b1_addrd_next[10:0]</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+</tr><tr>
+<td>b1_addrd[10:0]</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+</tr><tr>
+<td>b1_addrd_we</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+</tr><tr>
+<td>b2_addrd_next[10:0]</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+</tr><tr>
+<td>b2_addrd[10:0]</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+</tr><tr>
+<td>b2_addrd_we</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+</tr><tr>
+<td>b3_addrd_next[10:0]</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+</tr><tr>
+<td>b3_addrd[10:0]</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+</tr><tr>
+<td>b3_addrd_we</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+</tr><tr>
+<td>b4_addrd_next[10:0]</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+</tr><tr>
+<td>b4_addrd[10:0]</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+</tr><tr>
+<td>b4_addrd_we</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+</tr><tr>
+<td>b5_addrd_next[10:0]</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+</tr><tr>
+<td>b5_addrd[10:0]</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+</tr><tr>
+<td>b5_addrd_we</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+</tr><tr>
+<td>b6_addrd_next[10:0]</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+</tr><tr>
+<td>b6_addrd[10:0]</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+</tr><tr>
+<td>b6_addrd_we</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+</tr><tr>
+<td>b7_addrd_next[10:0]</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+</tr><tr>
+<td>b7_addrd[10:0]</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+</tr><tr>
+<td>b7_addrd_we</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+</tr><tr>
+<td>b8_addrd_next[10:0]</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+</tr><tr>
+<td>b8_addrd[10:0]</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+</tr><tr>
+<td>b8_addrd_we</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+</tr><tr>
+<td>b9_addrd_next[10:0]</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+</tr><tr>
+<td>b9_addrd[10:0]</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+</tr><tr>
+<td>b9_addrd_we</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+</tr><tr>
+<td>reset_x</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+</tr><tr>
+<td>reset_y</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+</tr><tr>
+<td>reset_ch_in</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+</tr><tr>
+<td>reset_ch_out</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+</tr><tr>
+<td>last_x</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+</tr><tr>
+<td>last_y</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+</tr><tr>
+<td>last_ch_in</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+</tr><tr>
+<td>last_ch_out</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+</tr><tr>
+<td>last_overall</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+</tr><tr>
+<td>prev_ch_out_next[4:0]</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+</tr><tr>
+<td>prev_ch_out_next[31:5]</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+</tr><tr>
+<td>prev_ch_out[4:0]</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+</tr><tr>
+<td>prev_ch_out[31:5]</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+</tr><tr>
+<td>prev_ch_out_we</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+</tr><tr>
+<td>output_valid_reg_next</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+</tr><tr>
+<td>output_valid_reg</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+</tr><tr>
+<td>output_valid_reg_we</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+</tr><tr>
+<td>amem_next[13:0]</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+</tr><tr>
+<td>amem_c[13:0]</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+</tr><tr>
+<td>bmem_next[10:0]</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+</tr><tr>
+<td>bmem_c[10:0]</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+</tr><tr>
+<td>initcount_fsm[5:0]</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+</tr><tr>
+<td>initcount_next[5:0]</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+</tr><tr>
+<td>initcount[5:0]</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+</tr><tr>
+<td>initcount_we</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+</tr></table><br clear=all>
+<hr>
+<a name="FSM"></a>
+FSM Coverage for Module : <a href="mod4.html" >controller_fsm</a><br clear=all>
+<table align=left class="noborder">
+<caption><b>Summary for FSM :: current_state</b></caption>
+<tr>
+<th nowrap width=120></th><th nowrap width=80>Total</th><th nowrap width=80>Covered</th><th nowrap width=80>Percent</th><th nowrap width=200></th></tr><tr class="wht">
+<td>States</td>
+<td class="rt">8</td>
+<td class="rt">4</td>
+<td class="rt">50.00 </td>
+<td>(Not included in score)</td>
+</tr><tr class="s4">
+<td>Transitions</td>
+<td class="rt">16</td>
+<td class="rt">7</td>
+<td class="rt">43.75 </td>
+<td></td>
+</tr><tr class="wht">
+<td>Sequences</td>
+<td class="rt">0</td>
+<td class="rt">0</td>
+<td></td>
+<td></td>
+</tr></table><br clear=all>
+<b>State, Transition and Sequence Details for FSM :: current_state</b><hr>
+<table align=left class="sortable noborder">
+<tr class="sortablehead">
+<td class="alfsrt">states</td><td>Line No.</td><td class="alfsrt">Covered</td></tr><tr class="uGreen">
+<td nowrap>IDLE</td>
+<td class="rt">249</td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td nowrap>AF</td>
+<td class="rt">284</td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td nowrap>BF</td>
+<td class="rt">296</td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td nowrap>init</td>
+<td class="rt">308</td>
+<td>Covered</td>
+</tr><tr class="uRed">
+<td nowrap>FETCH_1</td>
+<td class="rt">319</td>
+<td>Not&nbsp;Covered</td>
+</tr><tr class="uRed">
+<td nowrap>MAC_1</td>
+<td class="rt">328</td>
+<td>Not&nbsp;Covered</td>
+</tr><tr class="uRed">
+<td nowrap>MAC_2</td>
+<td class="rt">339</td>
+<td>Not&nbsp;Covered</td>
+</tr><tr class="uRed">
+<td nowrap>MAC_3</td>
+<td class="rt">348</td>
+<td>Not&nbsp;Covered</td>
+</tr></table><br clear=all>
+<br clear=all>
+<table align=left class="sortable noborder">
+<tr class="sortablehead">
+<td class="alfsrt">transitions</td><td>Line No.</td><td class="alfsrt">Covered</td></tr><tr class="uGreen">
+<td nowrap>IDLE->AF</td>
+<td class="rt">284</td>
+<td>Covered</td>
+</tr><tr class="uRed">
+<td nowrap>AF->IDLE</td>
+<td class="rt">249</td>
+<td>Not&nbsp;Covered</td>
+</tr><tr class="uGreen">
+<td nowrap>AF->BF</td>
+<td class="rt">296</td>
+<td>Covered</td>
+</tr><tr class="uRed">
+<td nowrap>BF->IDLE</td>
+<td class="rt">249</td>
+<td>Not&nbsp;Covered</td>
+</tr><tr class="uGreen">
+<td nowrap>BF->init</td>
+<td class="rt">308</td>
+<td>Covered</td>
+</tr><tr class="uRed">
+<td nowrap>init->IDLE</td>
+<td class="rt">249</td>
+<td>Not&nbsp;Covered</td>
+</tr><tr class="uGreen">
+<td nowrap>init->FETCH_1</td>
+<td class="rt">319</td>
+<td>Covered</td>
+</tr><tr class="uRed">
+<td nowrap>FETCH_1->IDLE</td>
+<td class="rt">249</td>
+<td>Not&nbsp;Covered</td>
+</tr><tr class="uRed">
+<td nowrap>FETCH_1->MAC_1</td>
+<td class="rt">328</td>
+<td>Not&nbsp;Covered</td>
+</tr><tr class="uRed">
+<td nowrap>MAC_1->IDLE</td>
+<td class="rt">249</td>
+<td>Not&nbsp;Covered</td>
+</tr><tr class="uRed">
+<td nowrap>MAC_1->MAC_2</td>
+<td class="rt">339</td>
+<td>Not&nbsp;Covered</td>
+</tr><tr class="uRed">
+<td nowrap>MAC_2->IDLE</td>
+<td class="rt">249</td>
+<td>Not&nbsp;Covered</td>
+</tr><tr class="uRed">
+<td nowrap>MAC_2->MAC_3</td>
+<td class="rt">348</td>
+<td>Not&nbsp;Covered</td>
+</tr><tr class="uGreen">
+<td nowrap>MAC_3->IDLE</td>
+<td class="rt">249</td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td nowrap>MAC_3->init</td>
+<td class="rt">357</td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td nowrap>MAC_3->FETCH_1</td>
+<td class="rt">357</td>
+<td>Covered</td>
+</tr></table><br clear=all>
+<br clear=all>
+<hr>
+<a name="Branch"></a>
+Branch Coverage for Module : <a href="mod4.html" >controller_fsm</a><br clear=all>
+<table align=left class="noborder">
+<tr>
+<th nowrap width=120></th><th nowrap width=80>Line No.</th><th nowrap width=80>Total</th><th nowrap width=80>Covered</th><th nowrap width=80>Percent</th></tr><tr class="s9">
+<td>Branches</td>
+<td></td>
+<td class="rt">68</td>
+<td class="rt">64</td>
+<td class="rt">94.12 </td>
+</tr><tr class="s10">
+<td>TERNARY</td>
+<td class="rt">126</td>
+<td class="rt">2</td>
+<td class="rt">2</td>
+<td class="rt">100.00</td>
+</tr><tr class="s10">
+<td>TERNARY</td>
+<td class="rt">127</td>
+<td class="rt">2</td>
+<td class="rt">2</td>
+<td class="rt">100.00</td>
+</tr><tr class="s10">
+<td>TERNARY</td>
+<td class="rt">128</td>
+<td class="rt">2</td>
+<td class="rt">2</td>
+<td class="rt">100.00</td>
+</tr><tr class="s10">
+<td>TERNARY</td>
+<td class="rt">129</td>
+<td class="rt">2</td>
+<td class="rt">2</td>
+<td class="rt">100.00</td>
+</tr><tr class="s5">
+<td>TERNARY</td>
+<td class="rt">130</td>
+<td class="rt">2</td>
+<td class="rt">1</td>
+<td class="rt">50.00 </td>
+</tr><tr class="s10">
+<td>TERNARY</td>
+<td class="rt">131</td>
+<td class="rt">2</td>
+<td class="rt">2</td>
+<td class="rt">100.00</td>
+</tr><tr class="s10">
+<td>TERNARY</td>
+<td class="rt">132</td>
+<td class="rt">2</td>
+<td class="rt">2</td>
+<td class="rt">100.00</td>
+</tr><tr class="s10">
+<td>TERNARY</td>
+<td class="rt">133</td>
+<td class="rt">2</td>
+<td class="rt">2</td>
+<td class="rt">100.00</td>
+</tr><tr class="s10">
+<td>TERNARY</td>
+<td class="rt">134</td>
+<td class="rt">2</td>
+<td class="rt">2</td>
+<td class="rt">100.00</td>
+</tr><tr class="s10">
+<td>TERNARY</td>
+<td class="rt">146</td>
+<td class="rt">2</td>
+<td class="rt">2</td>
+<td class="rt">100.00</td>
+</tr><tr class="s10">
+<td>TERNARY</td>
+<td class="rt">147</td>
+<td class="rt">2</td>
+<td class="rt">2</td>
+<td class="rt">100.00</td>
+</tr><tr class="s10">
+<td>TERNARY</td>
+<td class="rt">148</td>
+<td class="rt">2</td>
+<td class="rt">2</td>
+<td class="rt">100.00</td>
+</tr><tr class="s10">
+<td>TERNARY</td>
+<td class="rt">149</td>
+<td class="rt">2</td>
+<td class="rt">2</td>
+<td class="rt">100.00</td>
+</tr><tr class="s5">
+<td>TERNARY</td>
+<td class="rt">150</td>
+<td class="rt">2</td>
+<td class="rt">1</td>
+<td class="rt">50.00 </td>
+</tr><tr class="s10">
+<td>TERNARY</td>
+<td class="rt">151</td>
+<td class="rt">2</td>
+<td class="rt">2</td>
+<td class="rt">100.00</td>
+</tr><tr class="s10">
+<td>TERNARY</td>
+<td class="rt">152</td>
+<td class="rt">2</td>
+<td class="rt">2</td>
+<td class="rt">100.00</td>
+</tr><tr class="s10">
+<td>TERNARY</td>
+<td class="rt">153</td>
+<td class="rt">2</td>
+<td class="rt">2</td>
+<td class="rt">100.00</td>
+</tr><tr class="s10">
+<td>TERNARY</td>
+<td class="rt">154</td>
+<td class="rt">2</td>
+<td class="rt">2</td>
+<td class="rt">100.00</td>
+</tr><tr class="s10">
+<td>TERNARY</td>
+<td class="rt">159</td>
+<td class="rt">2</td>
+<td class="rt">2</td>
+<td class="rt">100.00</td>
+</tr><tr class="s10">
+<td>TERNARY</td>
+<td class="rt">160</td>
+<td class="rt">2</td>
+<td class="rt">2</td>
+<td class="rt">100.00</td>
+</tr><tr class="s10">
+<td>TERNARY</td>
+<td class="rt">161</td>
+<td class="rt">2</td>
+<td class="rt">2</td>
+<td class="rt">100.00</td>
+</tr><tr class="s10">
+<td>TERNARY</td>
+<td class="rt">162</td>
+<td class="rt">2</td>
+<td class="rt">2</td>
+<td class="rt">100.00</td>
+</tr><tr class="s5">
+<td>TERNARY</td>
+<td class="rt">235</td>
+<td class="rt">2</td>
+<td class="rt">1</td>
+<td class="rt">50.00 </td>
+</tr><tr class="s10">
+<td>TERNARY</td>
+<td class="rt">241</td>
+<td class="rt">2</td>
+<td class="rt">2</td>
+<td class="rt">100.00</td>
+</tr><tr class="s10">
+<td>TERNARY</td>
+<td class="rt">256</td>
+<td class="rt">2</td>
+<td class="rt">2</td>
+<td class="rt">100.00</td>
+</tr><tr class="s10">
+<td>IF</td>
+<td class="rt">248</td>
+<td class="rt">2</td>
+<td class="rt">2</td>
+<td class="rt">100.00</td>
+</tr><tr class="s9">
+<td>CASE</td>
+<td class="rt">272</td>
+<td class="rt">16</td>
+<td class="rt">15</td>
+<td class="rt">93.75 </td>
+</tr></table><br clear=all>
+<pre class="code"><br clear=all>
+126          assign a1_addrd_next=(x-KERNEL_SIZE/2 >= 0 && x-KERNEL_SIZE/2 < FEATURE_MAP_WIDTH && y-KERNEL_SIZE/2 >= 0 && y-KERNEL_SIZE/2 < FEATURE_MAP_HEIGHT)? (256*(x-KERNEL_SIZE/2)+4*(y-KERNEL_SIZE/2)+ch_in):0;
+                                                                                                                                                               <font color = "green">-1-</font>  
+                                                                                                                                                               <font color = "green">==></font>  
+                                                                                                                                                               <font color = "green">==></font>  
+</pre>
+<br clear=all>
+<span class=repname>Branches:</span>
+<br clear=all>
+<table align=left class="noborder">
+<tr>
+<th nowrap width=80>-1-</th><th nowrap width=80>Status</th></tr><tr class="uGreen">
+<td align=center>1</td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td align=center>0</td>
+<td>Covered</td>
+</tr></table><br clear=all>
+<pre class="code"><br clear=all>
+127          assign a2_addrd_next=(x+1-KERNEL_SIZE/2 >= 0 && x+1-KERNEL_SIZE/2 < FEATURE_MAP_WIDTH && y-KERNEL_SIZE/2 >= 0 && y-KERNEL_SIZE/2 < FEATURE_MAP_HEIGHT)? (256*(x+1-KERNEL_SIZE/2)+4*(y-KERNEL_SIZE/2)+ch_in):0;
+                                                                                                                                                                   <font color = "green">-1-</font>  
+                                                                                                                                                                   <font color = "green">==></font>  
+                                                                                                                                                                   <font color = "green">==></font>  
+</pre>
+<br clear=all>
+<span class=repname>Branches:</span>
+<br clear=all>
+<table align=left class="noborder">
+<tr>
+<th nowrap width=80>-1-</th><th nowrap width=80>Status</th></tr><tr class="uGreen">
+<td align=center>1</td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td align=center>0</td>
+<td>Covered</td>
+</tr></table><br clear=all>
+<pre class="code"><br clear=all>
+128          assign a3_addrd_next=(x+2-KERNEL_SIZE/2 >= 0 && x+2-KERNEL_SIZE/2 < FEATURE_MAP_WIDTH && y-KERNEL_SIZE/2 >= 0 && y-KERNEL_SIZE/2 < FEATURE_MAP_HEIGHT)? (256*(x+2-KERNEL_SIZE/2)+4*(y-KERNEL_SIZE/2)+ch_in):0;
+                                                                                                                                                                   <font color = "green">-1-</font>  
+                                                                                                                                                                   <font color = "green">==></font>  
+                                                                                                                                                                   <font color = "green">==></font>  
+</pre>
+<br clear=all>
+<span class=repname>Branches:</span>
+<br clear=all>
+<table align=left class="noborder">
+<tr>
+<th nowrap width=80>-1-</th><th nowrap width=80>Status</th></tr><tr class="uGreen">
+<td align=center>1</td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td align=center>0</td>
+<td>Covered</td>
+</tr></table><br clear=all>
+<pre class="code"><br clear=all>
+129          assign a4_addrd_next=(x-KERNEL_SIZE/2 >= 0 && x-KERNEL_SIZE/2 < FEATURE_MAP_WIDTH && y+1-KERNEL_SIZE/2 >= 0 && y+1-KERNEL_SIZE/2 < FEATURE_MAP_HEIGHT)? (256*(x-KERNEL_SIZE/2)+4*(y+1-KERNEL_SIZE/2)+ch_in):0;
+                                                                                                                                                                   <font color = "green">-1-</font>  
+                                                                                                                                                                   <font color = "green">==></font>  
+                                                                                                                                                                   <font color = "green">==></font>  
+</pre>
+<br clear=all>
+<span class=repname>Branches:</span>
+<br clear=all>
+<table align=left class="noborder">
+<tr>
+<th nowrap width=80>-1-</th><th nowrap width=80>Status</th></tr><tr class="uGreen">
+<td align=center>1</td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td align=center>0</td>
+<td>Covered</td>
+</tr></table><br clear=all>
+<pre class="code"><br clear=all>
+130          assign a5_addrd_next=(x+1-KERNEL_SIZE/2 >= 0 && x+1-KERNEL_SIZE/2 < FEATURE_MAP_WIDTH && y+1-KERNEL_SIZE/2 >= 0 && y+1-KERNEL_SIZE/2 < FEATURE_MAP_HEIGHT)? (256*(x+1-KERNEL_SIZE/2)+4*(y+1-KERNEL_SIZE/2)+ch_in):0;
+                                                                                                                                                                       <font color = "red">-1-</font>  
+                                                                                                                                                                       <font color = "green">==></font>  
+                                                                                                                                                                       <font color = "red">==></font>  
+</pre>
+<br clear=all>
+<span class=repname>Branches:</span>
+<br clear=all>
+<table align=left class="noborder">
+<tr>
+<th nowrap width=80>-1-</th><th nowrap width=80>Status</th></tr><tr class="uGreen">
+<td align=center>1</td>
+<td>Covered</td>
+</tr><tr class="uRed">
+<td align=center>0</td>
+<td>Not Covered</td>
+</tr></table><br clear=all>
+<pre class="code"><br clear=all>
+131          assign a6_addrd_next=(x+2-KERNEL_SIZE/2 >= 0 && x+2-KERNEL_SIZE/2 < FEATURE_MAP_WIDTH && y+1-KERNEL_SIZE/2 >= 0 && y+1-KERNEL_SIZE/2 < FEATURE_MAP_HEIGHT)? (256*(x+2-KERNEL_SIZE/2)+4*(y+1-KERNEL_SIZE/2)+ch_in):0;
+                                                                                                                                                                       <font color = "green">-1-</font>  
+                                                                                                                                                                       <font color = "green">==></font>  
+                                                                                                                                                                       <font color = "green">==></font>  
+</pre>
+<br clear=all>
+<span class=repname>Branches:</span>
+<br clear=all>
+<table align=left class="noborder">
+<tr>
+<th nowrap width=80>-1-</th><th nowrap width=80>Status</th></tr><tr class="uGreen">
+<td align=center>1</td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td align=center>0</td>
+<td>Covered</td>
+</tr></table><br clear=all>
+<pre class="code"><br clear=all>
+132          assign a7_addrd_next=(x-KERNEL_SIZE/2 >= 0 && x-KERNEL_SIZE/2 < FEATURE_MAP_WIDTH && y+2-KERNEL_SIZE/2 >= 0 && y+2-KERNEL_SIZE/2 < FEATURE_MAP_HEIGHT)? (256*(x-KERNEL_SIZE/2)+4*(y+2-KERNEL_SIZE/2)+ch_in):0;
+                                                                                                                                                                   <font color = "green">-1-</font>  
+                                                                                                                                                                   <font color = "green">==></font>  
+                                                                                                                                                                   <font color = "green">==></font>  
+</pre>
+<br clear=all>
+<span class=repname>Branches:</span>
+<br clear=all>
+<table align=left class="noborder">
+<tr>
+<th nowrap width=80>-1-</th><th nowrap width=80>Status</th></tr><tr class="uGreen">
+<td align=center>1</td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td align=center>0</td>
+<td>Covered</td>
+</tr></table><br clear=all>
+<pre class="code"><br clear=all>
+133          assign a8_addrd_next=(x+1-KERNEL_SIZE/2 >= 0 && x+1-KERNEL_SIZE/2 < FEATURE_MAP_WIDTH && y+2-KERNEL_SIZE/2 >= 0 && y+2-KERNEL_SIZE/2 < FEATURE_MAP_HEIGHT)? (256*(x+1-KERNEL_SIZE/2)+4*(y+2-KERNEL_SIZE/2)+ch_in):0;
+                                                                                                                                                                       <font color = "green">-1-</font>  
+                                                                                                                                                                       <font color = "green">==></font>  
+                                                                                                                                                                       <font color = "green">==></font>  
+</pre>
+<br clear=all>
+<span class=repname>Branches:</span>
+<br clear=all>
+<table align=left class="noborder">
+<tr>
+<th nowrap width=80>-1-</th><th nowrap width=80>Status</th></tr><tr class="uGreen">
+<td align=center>1</td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td align=center>0</td>
+<td>Covered</td>
+</tr></table><br clear=all>
+<pre class="code"><br clear=all>
+134          assign a9_addrd_next=(x+2-KERNEL_SIZE/2 >= 0 && x+2-KERNEL_SIZE/2 < FEATURE_MAP_WIDTH && y+2-KERNEL_SIZE/2 >= 0 && y+2-KERNEL_SIZE/2 < FEATURE_MAP_HEIGHT)? (256*(x+2-KERNEL_SIZE/2)+4*(y+2-KERNEL_SIZE/2)+ch_in):0;
+                                                                                                                                                                       <font color = "green">-1-</font>  
+                                                                                                                                                                       <font color = "green">==></font>  
+                                                                                                                                                                       <font color = "green">==></font>  
+</pre>
+<br clear=all>
+<span class=repname>Branches:</span>
+<br clear=all>
+<table align=left class="noborder">
+<tr>
+<th nowrap width=80>-1-</th><th nowrap width=80>Status</th></tr><tr class="uGreen">
+<td align=center>1</td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td align=center>0</td>
+<td>Covered</td>
+</tr></table><br clear=all>
+<pre class="code"><br clear=all>
+146          assign a1_sel=(x-KERNEL_SIZE/2 >= 0 && x-KERNEL_SIZE/2 < FEATURE_MAP_WIDTH && y-KERNEL_SIZE/2 >= 0 && y-KERNEL_SIZE/2 < FEATURE_MAP_HEIGHT)? 1:0;
+                                                                                                                                                        <font color = "green">-1-</font>  
+                                                                                                                                                        <font color = "green">==></font>  
+                                                                                                                                                        <font color = "green">==></font>  
+</pre>
+<br clear=all>
+<span class=repname>Branches:</span>
+<br clear=all>
+<table align=left class="noborder">
+<tr>
+<th nowrap width=80>-1-</th><th nowrap width=80>Status</th></tr><tr class="uGreen">
+<td align=center>1</td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td align=center>0</td>
+<td>Covered</td>
+</tr></table><br clear=all>
+<pre class="code"><br clear=all>
+147          assign a2_sel=(x+1-KERNEL_SIZE/2 >= 0 && x+1-KERNEL_SIZE/2 < FEATURE_MAP_WIDTH && y-KERNEL_SIZE/2 >= 0 && y-KERNEL_SIZE/2 < FEATURE_MAP_HEIGHT)? 1:0;
+                                                                                                                                                            <font color = "green">-1-</font>  
+                                                                                                                                                            <font color = "green">==></font>  
+                                                                                                                                                            <font color = "green">==></font>  
+</pre>
+<br clear=all>
+<span class=repname>Branches:</span>
+<br clear=all>
+<table align=left class="noborder">
+<tr>
+<th nowrap width=80>-1-</th><th nowrap width=80>Status</th></tr><tr class="uGreen">
+<td align=center>1</td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td align=center>0</td>
+<td>Covered</td>
+</tr></table><br clear=all>
+<pre class="code"><br clear=all>
+148          assign a3_sel=(x+2-KERNEL_SIZE/2 >= 0 && x+2-KERNEL_SIZE/2 < FEATURE_MAP_WIDTH && y-KERNEL_SIZE/2 >= 0 && y-KERNEL_SIZE/2 < FEATURE_MAP_HEIGHT )? 1:0;
+                                                                                                                                                             <font color = "green">-1-</font>  
+                                                                                                                                                             <font color = "green">==></font>  
+                                                                                                                                                             <font color = "green">==></font>  
+</pre>
+<br clear=all>
+<span class=repname>Branches:</span>
+<br clear=all>
+<table align=left class="noborder">
+<tr>
+<th nowrap width=80>-1-</th><th nowrap width=80>Status</th></tr><tr class="uGreen">
+<td align=center>1</td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td align=center>0</td>
+<td>Covered</td>
+</tr></table><br clear=all>
+<pre class="code"><br clear=all>
+149          assign a4_sel=(x-KERNEL_SIZE/2 >= 0 && x-KERNEL_SIZE/2 < FEATURE_MAP_WIDTH && y+1-KERNEL_SIZE/2 >= 0 && y+1-KERNEL_SIZE/2 < FEATURE_MAP_HEIGHT )? 1:0;
+                                                                                                                                                             <font color = "green">-1-</font>  
+                                                                                                                                                             <font color = "green">==></font>  
+                                                                                                                                                             <font color = "green">==></font>  
+</pre>
+<br clear=all>
+<span class=repname>Branches:</span>
+<br clear=all>
+<table align=left class="noborder">
+<tr>
+<th nowrap width=80>-1-</th><th nowrap width=80>Status</th></tr><tr class="uGreen">
+<td align=center>1</td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td align=center>0</td>
+<td>Covered</td>
+</tr></table><br clear=all>
+<pre class="code"><br clear=all>
+150          assign a5_sel=(x+1-KERNEL_SIZE/2 >= 0 && x+1-KERNEL_SIZE/2 < FEATURE_MAP_WIDTH && y+1-KERNEL_SIZE/2 >= 0 && y+1-KERNEL_SIZE/2 < FEATURE_MAP_HEIGHT )? 1:0;
+                                                                                                                                                                 <font color = "red">-1-</font>  
+                                                                                                                                                                 <font color = "green">==></font>  
+                                                                                                                                                                 <font color = "red">==></font>  
+</pre>
+<br clear=all>
+<span class=repname>Branches:</span>
+<br clear=all>
+<table align=left class="noborder">
+<tr>
+<th nowrap width=80>-1-</th><th nowrap width=80>Status</th></tr><tr class="uGreen">
+<td align=center>1</td>
+<td>Covered</td>
+</tr><tr class="uRed">
+<td align=center>0</td>
+<td>Not Covered</td>
+</tr></table><br clear=all>
+<pre class="code"><br clear=all>
+151          assign a6_sel=(x+2-KERNEL_SIZE/2 >= 0 && x+2-KERNEL_SIZE/2 < FEATURE_MAP_WIDTH && y+1-KERNEL_SIZE/2 >= 0 && y+1-KERNEL_SIZE/2 < FEATURE_MAP_HEIGHT )? 1:0;
+                                                                                                                                                                 <font color = "green">-1-</font>  
+                                                                                                                                                                 <font color = "green">==></font>  
+                                                                                                                                                                 <font color = "green">==></font>  
+</pre>
+<br clear=all>
+<span class=repname>Branches:</span>
+<br clear=all>
+<table align=left class="noborder">
+<tr>
+<th nowrap width=80>-1-</th><th nowrap width=80>Status</th></tr><tr class="uGreen">
+<td align=center>1</td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td align=center>0</td>
+<td>Covered</td>
+</tr></table><br clear=all>
+<pre class="code"><br clear=all>
+152          assign a7_sel=(x-KERNEL_SIZE/2 >= 0 && x-KERNEL_SIZE/2 < FEATURE_MAP_WIDTH && y+2-KERNEL_SIZE/2 >= 0 && y+2-KERNEL_SIZE/2 < FEATURE_MAP_HEIGHT )? 1:0;
+                                                                                                                                                             <font color = "green">-1-</font>  
+                                                                                                                                                             <font color = "green">==></font>  
+                                                                                                                                                             <font color = "green">==></font>  
+</pre>
+<br clear=all>
+<span class=repname>Branches:</span>
+<br clear=all>
+<table align=left class="noborder">
+<tr>
+<th nowrap width=80>-1-</th><th nowrap width=80>Status</th></tr><tr class="uGreen">
+<td align=center>1</td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td align=center>0</td>
+<td>Covered</td>
+</tr></table><br clear=all>
+<pre class="code"><br clear=all>
+153          assign a8_sel=(x+1-KERNEL_SIZE/2 >= 0 && x+1-KERNEL_SIZE/2 < FEATURE_MAP_WIDTH && y+2-KERNEL_SIZE/2 >= 0 && y+2-KERNEL_SIZE/2 < FEATURE_MAP_HEIGHT )? 1:0;
+                                                                                                                                                                 <font color = "green">-1-</font>  
+                                                                                                                                                                 <font color = "green">==></font>  
+                                                                                                                                                                 <font color = "green">==></font>  
+</pre>
+<br clear=all>
+<span class=repname>Branches:</span>
+<br clear=all>
+<table align=left class="noborder">
+<tr>
+<th nowrap width=80>-1-</th><th nowrap width=80>Status</th></tr><tr class="uGreen">
+<td align=center>1</td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td align=center>0</td>
+<td>Covered</td>
+</tr></table><br clear=all>
+<pre class="code"><br clear=all>
+154          assign a9_sel=(x+2-KERNEL_SIZE/2 >= 0 && x+2-KERNEL_SIZE/2 < FEATURE_MAP_WIDTH && y+2-KERNEL_SIZE/2 >= 0 && y+2-KERNEL_SIZE/2 < FEATURE_MAP_HEIGHT )? 1:0;
+                                                                                                                                                                 <font color = "green">-1-</font>  
+                                                                                                                                                                 <font color = "green">==></font>  
+                                                                                                                                                                 <font color = "green">==></font>  
+</pre>
+<br clear=all>
+<span class=repname>Branches:</span>
+<br clear=all>
+<table align=left class="noborder">
+<tr>
+<th nowrap width=80>-1-</th><th nowrap width=80>Status</th></tr><tr class="uGreen">
+<td align=center>1</td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td align=center>0</td>
+<td>Covered</td>
+</tr></table><br clear=all>
+<pre class="code"><br clear=all>
+159          assign x_next = reset_x ? 0 : x + 1;
+                                     <font color = "green">-1-</font>  
+                                     <font color = "green">==></font>  
+                                     <font color = "green">==></font>  
+</pre>
+<br clear=all>
+<span class=repname>Branches:</span>
+<br clear=all>
+<table align=left class="noborder">
+<tr>
+<th nowrap width=80>-1-</th><th nowrap width=80>Status</th></tr><tr class="uGreen">
+<td align=center>1</td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td align=center>0</td>
+<td>Covered</td>
+</tr></table><br clear=all>
+<pre class="code"><br clear=all>
+160          assign y_next = reset_y ? 0 : y + 1;
+                                     <font color = "green">-1-</font>  
+                                     <font color = "green">==></font>  
+                                     <font color = "green">==></font>  
+</pre>
+<br clear=all>
+<span class=repname>Branches:</span>
+<br clear=all>
+<table align=left class="noborder">
+<tr>
+<th nowrap width=80>-1-</th><th nowrap width=80>Status</th></tr><tr class="uGreen">
+<td align=center>1</td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td align=center>0</td>
+<td>Covered</td>
+</tr></table><br clear=all>
+<pre class="code"><br clear=all>
+161          assign ch_in_next = reset_ch_in ? 0 : ch_in + 1;
+                                             <font color = "green">-1-</font>  
+                                             <font color = "green">==></font>  
+                                             <font color = "green">==></font>  
+</pre>
+<br clear=all>
+<span class=repname>Branches:</span>
+<br clear=all>
+<table align=left class="noborder">
+<tr>
+<th nowrap width=80>-1-</th><th nowrap width=80>Status</th></tr><tr class="uGreen">
+<td align=center>1</td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td align=center>0</td>
+<td>Covered</td>
+</tr></table><br clear=all>
+<pre class="code"><br clear=all>
+162          assign ch_out_next = reset_ch_out ? 0 : ch_out + 1;
+                                               <font color = "green">-1-</font>  
+                                               <font color = "green">==></font>  
+                                               <font color = "green">==></font>  
+</pre>
+<br clear=all>
+<span class=repname>Branches:</span>
+<br clear=all>
+<table align=left class="noborder">
+<tr>
+<th nowrap width=80>-1-</th><th nowrap width=80>Status</th></tr><tr class="uGreen">
+<td align=center>1</td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td align=center>0</td>
+<td>Covered</td>
+</tr></table><br clear=all>
+<pre class="code"><br clear=all>
+235          assign amem_next = (amem_addr<=16383)?amem_c : 0;
+                                                  <font color = "red">-1-</font>  
+                                                  <font color = "green">==></font>  
+                                                  <font color = "red">==></font>  
+</pre>
+<br clear=all>
+<span class=repname>Branches:</span>
+<br clear=all>
+<table align=left class="noborder">
+<tr>
+<th nowrap width=80>-1-</th><th nowrap width=80>Status</th></tr><tr class="uGreen">
+<td align=center>1</td>
+<td>Covered</td>
+</tr><tr class="uRed">
+<td align=center>0</td>
+<td>Not Covered</td>
+</tr></table><br clear=all>
+<pre class="code"><br clear=all>
+241          assign bmem_next = (bmem_addr<=1151)?bmem_c : 0;
+                                                 <font color = "green">-1-</font>  
+                                                 <font color = "green">==></font>  
+                                                 <font color = "green">==></font>  
+</pre>
+<br clear=all>
+<span class=repname>Branches:</span>
+<br clear=all>
+<table align=left class="noborder">
+<tr>
+<th nowrap width=80>-1-</th><th nowrap width=80>Status</th></tr><tr class="uGreen">
+<td align=center>1</td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td align=center>0</td>
+<td>Covered</td>
+</tr></table><br clear=all>
+<pre class="code"><br clear=all>
+256          assign initcount_next = (initcount==35)? 0 : initcount_fsm;
+                                                    <font color = "green">-1-</font>  
+                                                    <font color = "green">==></font>  
+                                                    <font color = "green">==></font>  
+</pre>
+<br clear=all>
+<span class=repname>Branches:</span>
+<br clear=all>
+<table align=left class="noborder">
+<tr>
+<th nowrap width=80>-1-</th><th nowrap width=80>Status</th></tr><tr class="uGreen">
+<td align=center>1</td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td align=center>0</td>
+<td>Covered</td>
+</tr></table><br clear=all>
+<pre class="code"><br clear=all>
+248            if(arst_n_in==0) begin
+               <font color = "green">-1-</font>  
+249              current_state <= IDLE;
+           <font color = "green">      ==></font>
+250            end else begin
+251              current_state <= next_state;
+           <font color = "green">      ==></font>
+</pre>
+<br clear=all>
+<span class=repname>Branches:</span>
+<br clear=all>
+<table align=left class="noborder">
+<tr>
+<th nowrap width=80>-1-</th><th nowrap width=80>Status</th></tr><tr class="uGreen">
+<td align=center>1</td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td align=center>0</td>
+<td>Covered</td>
+</tr></table><br clear=all>
+<pre class="code"><br clear=all>
+272            case (current_state)
+               <font color = "red">-1-</font>  
+273              IDLE: begin
+274                initcount_fsm = 0;
+275        	amem_c=0;
+276        	bmem_c=0;
+277        	XXX = 0;
+278                running = 0;
+279        	a_ready = 0;
+280                b_ready = 0;
+281        	mac_valid_1 = 0;
+282        	mac_valid_2 = 0;
+283                mac_valid_3 = 0;
+284                next_state = start ? AF: IDLE;
+                                      <font color = "green">-2-</font>  
+                                      <font color = "green">==></font>  
+                                      <font color = "green">==></font>  
+285              end
+286              AF : begin
+287        	XXX = 0;
+288                running = 0;
+289        	a_ready = 1;
+290                b_ready = 0;
+291        	mac_valid_1 = 0;
+292        	mac_valid_2 = 0;
+293                mac_valid_3 = 0;
+294        	amem_c = amem_addr+1;
+295        	amem_write_en=1;
+296                next_state = (amem_addr==16383) ? BF: AF;
+                                                   <font color = "green">-3-</font>  
+                                                   <font color = "green">==></font>  
+                                                   <font color = "green">==></font>  
+297        	end
+298                BF : begin
+299        	XXX = 0;
+300                running = 0;
+301        	a_ready = 0;
+302                b_ready = 1;
+303        	mac_valid_1 = 0;
+304        	mac_valid_2 = 0;
+305                mac_valid_3 = 0;
+306        	bmem_c = bmem_addr+1;
+307        	bmem_write_en=1;
+308                next_state = (bmem_addr==1151) ? init: BF;
+                                                  <font color = "green">-4-</font>  
+                                                  <font color = "green">==></font>  
+                                                  <font color = "green">==></font>  
+309        	end
+310              init: begin
+311                initcount_fsm = initcount +1;
+312                XXX = 1;
+313        	running = 0;
+314        	a_ready = 0;
+315                b_ready = 0;
+316        	mac_valid_1 = 0;
+317        	mac_valid_2 = 0;
+318                mac_valid_3 = 0;
+319        	next_state = (initcount==33)? FETCH_1:init;
+           	                            <font color = "green">-5-</font>  
+           	                            <font color = "green">==></font>  
+           	                            <font color = "green">==></font>  
+320        	end
+321              FETCH_1: begin
+322        	write_a = (ch_out==0)?1:0;
+           	                     <font color = "green">-6-</font>  
+           	                     <font color = "green">==></font>  
+           	                     <font color = "green">==></font>  
+323                XXX = 0;
+324                write_b = 1;
+325        	mac_valid_1 = 0;
+326        	mac_valid_2 = 0;
+327                mac_valid_3 = 0;
+328                next_state = MAC_1;
+329              end
+330              MAC_1: begin
+331                XXX = 0;
+           <font color = "green">        ==></font>
+332        	a_ready = 0;
+333                b_ready = 0;
+334        	write_a = 0;
+335                write_b = 0;
+336                mac_valid_1 = 1;
+337                mac_valid_2 = 0;
+338                mac_valid_3 = 0;
+339                next_state = MAC_2;
+340              end
+341              MAC_2: begin
+342                XXX = 0;
+           <font color = "green">        ==></font>
+343        	a_ready = 0;
+344                b_ready = 0;
+345                mac_valid_1 = 0;
+346                mac_valid_2 = 1;
+347                mac_valid_3 = 0;
+348                next_state = MAC_3;
+349              end
+350                MAC_3: begin
+351                XXX = 0;
+352        	a_ready = 0;
+353                b_ready = 0;
+354                mac_valid_1 = 0;
+355                mac_valid_2 = 0;
+356                mac_valid_3 = 1;
+357                next_state = last_overall ? IDLE: ((ch_out==32'h1f && ch_in ==32'h3) ?  init :FETCH_1);
+                                             <font color = "green">-7-</font>                                        <font color = "green">-8-</font>   
+                                             <font color = "green">==></font>                                        <font color = "green">==></font>   
+                                                                                        <font color = "green">==></font>  
+358              end
+                 MISSING_DEFAULT
+           <font color = "red">      ==></font>
+</pre>
+<br clear=all>
+<span class=repname>Branches:</span>
+<br clear=all>
+<table align=left class="noborder">
+<tr>
+<th nowrap width=80>-1-</th><th nowrap width=80>-2-</th><th nowrap width=80>-3-</th><th nowrap width=80>-4-</th><th nowrap width=80>-5-</th><th nowrap width=80>-6-</th><th nowrap width=80>-7-</th><th nowrap width=80>-8-</th><th nowrap width=80>Status</th></tr><tr class="uGreen">
+<td align=center>IDLE </td>
+<td align=center>1</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td align=center>IDLE </td>
+<td align=center>0</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td align=center>AF </td>
+<td align=center nowrap>-</td>
+<td align=center>1</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td align=center>AF </td>
+<td align=center nowrap>-</td>
+<td align=center>0</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td align=center>BF </td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center>1</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td align=center>BF </td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center>0</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td align=center>init </td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center>1</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td align=center>init </td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center>0</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td align=center>FETCH_1 </td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center>1</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td align=center>FETCH_1 </td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center>0</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td align=center>MAC_1 </td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td align=center>MAC_2 </td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td align=center>MAC_3 </td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center>1</td>
+<td align=center nowrap>-</td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td align=center>MAC_3 </td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center>0</td>
+<td align=center>1</td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td align=center>MAC_3 </td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center>0</td>
+<td align=center>0</td>
+<td>Covered</td>
+</tr><tr class="uRed">
+<td align=center>MISSING_DEFAULT</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td>Not Covered</td>
+</tr></table><br clear=all>
+</div>
+</div>
+<div class="ui-layout-center-inner-north">
+<div id="center-bread-crumb" class="breadCrumb module urg-margin-bottom">
+  <ul name="inst_tag_66">
+    <li>
+      <a href="#Line">Line</a>    </li>
+    <li>
+      <a href="#Cond">Cond</a>    </li>
+    <li>
+      <a href="#Toggle">Toggle</a>    </li>
+    <li>
+      <a href="#FSM">FSM</a>    </li>
+    <li>
+      <a href="#Branch">Branch</a>    </li>
+  </ul>
+  <ul name="tag_controller_fsm">
+    <li>
+      <a href="#Line">Line</a>    </li>
+    <li>
+      <a href="#Cond">Cond</a>    </li>
+    <li>
+      <a href="#Toggle">Toggle</a>    </li>
+    <li>
+      <a href="#FSM">FSM</a>    </li>
+    <li>
+      <a href="#Branch">Branch</a>    </li>
+  </ul>
+</div>
+</div>
+</div>
+<div class="ui-layout-south">
+<table align=center><tr><td class="s0 cl">0%</td>
+<td class="s1 cl">10%</td>
+<td class="s2 cl">20%</td>
+<td class="s3 cl">30%</td>
+<td class="s4 cl">40%</td>
+<td class="s5 cl">50%</td>
+<td class="s6 cl">60%</td>
+<td class="s7 cl">70%</td>
+<td class="s8 cl">80%</td>
+<td class="s9 cl">90%</td>
+<td class="s10 cl">100%</td></tr></table></div>
+</body>
+</html>

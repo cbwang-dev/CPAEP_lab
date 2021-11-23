@@ -1,0 +1,5 @@
+csrc/
+linter/
+log/
+.DS_Store
+out/

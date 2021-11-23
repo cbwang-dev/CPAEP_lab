@@ -1,0 +1,853 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="Author" content="<username>"> <meta name="GENERATOR" content="urg/version [en] (platform name) [urg]">
+<title>Unified Coverage Report :: Design Hierarchy</title>
+<link type="text/css" rel="stylesheet" href="css/.urg.css">
+<link type="text/css" rel="stylesheet" href="css/.treetable.css">
+<link type="text/css" rel="stylesheet" href="css/.layout.css">
+<script type="text/javascript" src="js/.jquery.js"></script>
+<script type="text/javascript" src="js/.jquery-ui.js"></script>
+<script type="text/javascript" src="js/.sortable.js"></script>
+<script type="text/javascript" src="js/.treetable.js"></script>
+<script type="text/javascript" src="js/.colResizable.js"></script>
+<script type="text/javascript" src="js/.layout.js"></script>
+<script type="text/javascript">
+var layout, westLayout, centerLayout;
+$(document).ready(function () {
+  layout = $("body").layout({ 
+    resizable: true,
+    spacing_open: 4,
+    spacing_closed: 4,
+    north: {
+      size: 76
+    },
+    south: {
+      size: 45,
+      initClosed: true
+    }  });
+  $("#hierarchyTable tbody tr").mousedown(function() {
+    $("tr.selected").removeClass("selected");
+    $("td.selected").removeClass("selected");
+    $(this).addClass("selected");
+    $(this).children().addClass("selected");
+  });
+  $("tr[data-tt-id='hierarchyTable_root']").each(function () {
+    $(this).attr("style", "display:none");
+  });
+  $("tr[data-tt-parent-id='hierarchyTable_root']").each(function () {
+    $(this).attr("style", "display:table-row");
+    $("#hierarchyTable").treetable("expandNode", $(this).attr("data-tt-id"));
+  });
+  $("table").colResizable({    liveDrag:true,
+    fixed:false,
+    draggingClass:"dragging"
+  });
+});
+function expandAll() {
+  $("#hierarchyTable").treetable("expandAll");
+}
+function collapseAll() {
+  if ($("tr[data-tt-parent-id='hierarchyTable_root']").length > 0) {
+    $("tr[data-tt-parent-id='hierarchyTable_root']").each(function () {
+      var nodeId = $(this).attr("data-tt-id");
+      var node = $("#hierarchyTable").treetable("node", nodeId);
+      $("#hierarchyTable").treetable("collapseNodeRecursive", node);
+    });
+  } else {
+    $("#hierarchyTable").treetable("collapseAll");
+  }
+}
+</script>
+</head>
+<body><div class="ui-layout-north">
+<div class="logo"></div>
+<center class="pagetitle">Design Hierarchy</center>
+<div align="center"><a href="dashboard.html" ><b>dashboard</b></a> | <a href="hierarchy.html" ><b>hierarchy</b></a> | <a href="modlist.html" ><b>modlist</b></a> | groups | <a href="tests.html" ><b>tests</b></a> | asserts</div>
+
+</div>
+<div class="ui-layout-center">
+<table class="noborder">
+  <tr>
+    <td class="noborder"><input type="button" value="Expand All" onClick="expandAll()"></td>
+    <td class="noborder"><input type="button" value="Collapse All" onClick="collapseAll()"></td>
+  </tr>
+</table>
+<br clear=all>
+<table id="hierarchyTable" border="0" cellpadding="0" cellspacing="0" class="sortable">
+  <thead class="table-header">
+    <tr>
+<th class="alfsrt">NAME</th><th>SCORE</th><th>LINE</th><th>COND</th><th>TOGGLE</th><th>FSM</th><th>BRANCH</th>    </tr>
+  </thead>
+  <tbody>
+    <tr data-tt-id="hierarchyTable_root">
+<td></td><td></td><td></td><td></td><td></td><td></td><td></td>    </tr>
+    <tr data-tt-id="inst_hash_1805348626" data-tt-parent-id="hierarchyTable_root">
+<td class="wordwrap"><a href="mod8.html#inst_tag_70" id="tag_urg_inst_70">tbench_top</a></td>
+<td class="s7 cl rt"> 79.68</td>
+<td class="s9 cl rt"> 94.39</td>
+<td class="s8 cl rt"> 80.28</td>
+<td class="s8 cl rt"> 88.64</td>
+<td class="s4 cl rt"> 43.75</td>
+<td class="s9 cl rt"> 91.33</td>
+    </tr>
+    <tr data-tt-id="inst_hash_1321034311" data-tt-parent-id="inst_hash_1805348626">
+<td class="wordwrap"><a href="mod3.html#inst_tag_65" id="tag_urg_inst_65">dut</a></td>
+<td class="s7 cl rt"> 79.72</td>
+<td class="s9 cl rt"> 94.29</td>
+<td class="s8 cl rt"> 80.80</td>
+<td class="s8 cl rt"> 88.58</td>
+<td class="s4 cl rt"> 43.75</td>
+<td class="s9 cl rt"> 91.19</td>
+    </tr>
+    <tr data-tt-id="inst_hash_1764133383" data-tt-parent-id="inst_hash_1321034311">
+<td class="wordwrap"><a href="mod6.html#inst_tag_68" id="tag_urg_inst_68">top_chip_i</a></td>
+<td class="s7 cl rt"> 79.87</td>
+<td class="s9 cl rt"> 94.29</td>
+<td class="s8 cl rt"> 80.80</td>
+<td class="s8 cl rt"> 89.32</td>
+<td class="s4 cl rt"> 43.75</td>
+<td class="s9 cl rt"> 91.19</td>
+    </tr>
+    <tr data-tt-id="inst_hash_796357782" data-tt-parent-id="inst_hash_1764133383">
+<td class="wordwrap"><a href="mod0_0.html#inst_tag_0" id="tag_urg_inst_0">a1_r</a></td>
+<td class="s9 cl rt"> 99.67</td>
+<td class="s10 cl rt">100.00</td>
+<td class="wht cl rt"></td>
+<td class="s9 cl rt"> 99.02</td>
+<td class="wht cl rt"></td>
+<td class="s10 cl rt">100.00</td>
+    </tr>
+    <tr data-tt-id="inst_hash_541621237" data-tt-parent-id="inst_hash_1764133383">
+<td class="wordwrap"><a href="mod0_0.html#inst_tag_1" id="tag_urg_inst_1">a2_r</a></td>
+<td class="s9 cl rt"> 99.67</td>
+<td class="s10 cl rt">100.00</td>
+<td class="wht cl rt"></td>
+<td class="s9 cl rt"> 99.02</td>
+<td class="wht cl rt"></td>
+<td class="s10 cl rt">100.00</td>
+    </tr>
+    <tr data-tt-id="inst_hash_286884692" data-tt-parent-id="inst_hash_1764133383">
+<td class="wordwrap"><a href="mod0_0.html#inst_tag_2" id="tag_urg_inst_2">a3_r</a></td>
+<td class="s9 cl rt"> 99.67</td>
+<td class="s10 cl rt">100.00</td>
+<td class="wht cl rt"></td>
+<td class="s9 cl rt"> 99.02</td>
+<td class="wht cl rt"></td>
+<td class="s10 cl rt">100.00</td>
+    </tr>
+    <tr data-tt-id="inst_hash_32148147" data-tt-parent-id="inst_hash_1764133383">
+<td class="wordwrap"><a href="mod0_0.html#inst_tag_3" id="tag_urg_inst_3">a4_r</a></td>
+<td class="s9 cl rt"> 99.67</td>
+<td class="s10 cl rt">100.00</td>
+<td class="wht cl rt"></td>
+<td class="s9 cl rt"> 99.02</td>
+<td class="wht cl rt"></td>
+<td class="s10 cl rt">100.00</td>
+    </tr>
+    <tr data-tt-id="inst_hash_222588398" data-tt-parent-id="inst_hash_1764133383">
+<td class="wordwrap"><a href="mod0_0.html#inst_tag_4" id="tag_urg_inst_4">a5_r</a></td>
+<td class="s9 cl rt"> 99.67</td>
+<td class="s10 cl rt">100.00</td>
+<td class="wht cl rt"></td>
+<td class="s9 cl rt"> 99.02</td>
+<td class="wht cl rt"></td>
+<td class="s10 cl rt">100.00</td>
+    </tr>
+    <tr data-tt-id="inst_hash_477324943" data-tt-parent-id="inst_hash_1764133383">
+<td class="wordwrap"><a href="mod0_0.html#inst_tag_5" id="tag_urg_inst_5">a6_r</a></td>
+<td class="s9 cl rt"> 99.67</td>
+<td class="s10 cl rt">100.00</td>
+<td class="wht cl rt"></td>
+<td class="s9 cl rt"> 99.02</td>
+<td class="wht cl rt"></td>
+<td class="s10 cl rt">100.00</td>
+    </tr>
+    <tr data-tt-id="inst_hash_732061488" data-tt-parent-id="inst_hash_1764133383">
+<td class="wordwrap"><a href="mod0_0.html#inst_tag_6" id="tag_urg_inst_6">a7_r</a></td>
+<td class="s9 cl rt"> 99.67</td>
+<td class="s10 cl rt">100.00</td>
+<td class="wht cl rt"></td>
+<td class="s9 cl rt"> 99.02</td>
+<td class="wht cl rt"></td>
+<td class="s10 cl rt">100.00</td>
+    </tr>
+    <tr data-tt-id="inst_hash_986798033" data-tt-parent-id="inst_hash_1764133383">
+<td class="wordwrap"><a href="mod0_0.html#inst_tag_7" id="tag_urg_inst_7">a8_r</a></td>
+<td class="s9 cl rt"> 99.67</td>
+<td class="s10 cl rt">100.00</td>
+<td class="wht cl rt"></td>
+<td class="s9 cl rt"> 99.02</td>
+<td class="wht cl rt"></td>
+<td class="s10 cl rt">100.00</td>
+    </tr>
+    <tr data-tt-id="inst_hash_1241534578" data-tt-parent-id="inst_hash_1764133383">
+<td class="wordwrap"><a href="mod0_0.html#inst_tag_8" id="tag_urg_inst_8">a9_r</a></td>
+<td class="s9 cl rt"> 99.67</td>
+<td class="s10 cl rt">100.00</td>
+<td class="wht cl rt"></td>
+<td class="s9 cl rt"> 99.02</td>
+<td class="wht cl rt"></td>
+<td class="s10 cl rt">100.00</td>
+    </tr>
+    <tr data-tt-id="inst_hash_1757971799" data-tt-parent-id="inst_hash_1764133383">
+<td class="wordwrap"><a href="mod0_0.html#inst_tag_9" id="tag_urg_inst_9">b1_r</a></td>
+<td class="s9 cl rt"> 99.67</td>
+<td class="s10 cl rt">100.00</td>
+<td class="wht cl rt"></td>
+<td class="s9 cl rt"> 99.02</td>
+<td class="wht cl rt"></td>
+<td class="s10 cl rt">100.00</td>
+    </tr>
+    <tr data-tt-id="inst_hash_1503235254" data-tt-parent-id="inst_hash_1764133383">
+<td class="wordwrap"><a href="mod0_0.html#inst_tag_10" id="tag_urg_inst_10">b2_r</a></td>
+<td class="s9 cl rt"> 99.67</td>
+<td class="s10 cl rt">100.00</td>
+<td class="wht cl rt"></td>
+<td class="s9 cl rt"> 99.02</td>
+<td class="wht cl rt"></td>
+<td class="s10 cl rt">100.00</td>
+    </tr>
+    <tr data-tt-id="inst_hash_1248498709" data-tt-parent-id="inst_hash_1764133383">
+<td class="wordwrap"><a href="mod0_0.html#inst_tag_11" id="tag_urg_inst_11">b3_r</a></td>
+<td class="s9 cl rt"> 99.67</td>
+<td class="s10 cl rt">100.00</td>
+<td class="wht cl rt"></td>
+<td class="s9 cl rt"> 99.02</td>
+<td class="wht cl rt"></td>
+<td class="s10 cl rt">100.00</td>
+    </tr>
+    <tr data-tt-id="inst_hash_993762164" data-tt-parent-id="inst_hash_1764133383">
+<td class="wordwrap"><a href="mod0_0.html#inst_tag_12" id="tag_urg_inst_12">b4_r</a></td>
+<td class="s9 cl rt"> 99.67</td>
+<td class="s10 cl rt">100.00</td>
+<td class="wht cl rt"></td>
+<td class="s9 cl rt"> 99.02</td>
+<td class="wht cl rt"></td>
+<td class="s10 cl rt">100.00</td>
+    </tr>
+    <tr data-tt-id="inst_hash_739025619" data-tt-parent-id="inst_hash_1764133383">
+<td class="wordwrap"><a href="mod0_0.html#inst_tag_13" id="tag_urg_inst_13">b5_r</a></td>
+<td class="s9 cl rt"> 99.67</td>
+<td class="s10 cl rt">100.00</td>
+<td class="wht cl rt"></td>
+<td class="s9 cl rt"> 99.02</td>
+<td class="wht cl rt"></td>
+<td class="s10 cl rt">100.00</td>
+    </tr>
+    <tr data-tt-id="inst_hash_484289074" data-tt-parent-id="inst_hash_1764133383">
+<td class="wordwrap"><a href="mod0_0.html#inst_tag_14" id="tag_urg_inst_14">b6_r</a></td>
+<td class="s9 cl rt"> 99.67</td>
+<td class="s10 cl rt">100.00</td>
+<td class="wht cl rt"></td>
+<td class="s9 cl rt"> 99.02</td>
+<td class="wht cl rt"></td>
+<td class="s10 cl rt">100.00</td>
+    </tr>
+    <tr data-tt-id="inst_hash_229552529" data-tt-parent-id="inst_hash_1764133383">
+<td class="wordwrap"><a href="mod0_0.html#inst_tag_15" id="tag_urg_inst_15">b7_r</a></td>
+<td class="s9 cl rt"> 99.67</td>
+<td class="s10 cl rt">100.00</td>
+<td class="wht cl rt"></td>
+<td class="s9 cl rt"> 99.02</td>
+<td class="wht cl rt"></td>
+<td class="s10 cl rt">100.00</td>
+    </tr>
+    <tr data-tt-id="inst_hash_25184016" data-tt-parent-id="inst_hash_1764133383">
+<td class="wordwrap"><a href="mod0_0.html#inst_tag_16" id="tag_urg_inst_16">b8_r</a></td>
+<td class="s9 cl rt"> 99.67</td>
+<td class="s10 cl rt">100.00</td>
+<td class="wht cl rt"></td>
+<td class="s9 cl rt"> 99.02</td>
+<td class="wht cl rt"></td>
+<td class="s10 cl rt">100.00</td>
+    </tr>
+    <tr data-tt-id="inst_hash_279920561" data-tt-parent-id="inst_hash_1764133383">
+<td class="wordwrap"><a href="mod0_0.html#inst_tag_17" id="tag_urg_inst_17">b9_r</a></td>
+<td class="s9 cl rt"> 99.67</td>
+<td class="s10 cl rt">100.00</td>
+<td class="wht cl rt"></td>
+<td class="s9 cl rt"> 99.02</td>
+<td class="wht cl rt"></td>
+<td class="s10 cl rt">100.00</td>
+    </tr>
+    <tr data-tt-id="inst_hash_160774275" data-tt-parent-id="inst_hash_1764133383">
+<td class="wordwrap"><a href="mod4.html#inst_tag_66" id="tag_urg_inst_66">controller</a></td>
+<td class="s7 cl rt"> 72.35</td>
+<td class="s10 cl rt">100.00</td>
+<td class="s7 cl rt"> 71.19</td>
+<td class="s6 cl rt"> 63.27</td>
+<td class="s4 cl rt"> 43.75</td>
+<td class="s8 cl rt"> 83.54</td>
+    </tr>
+    <tr data-tt-id="inst_hash_1036624802" data-tt-parent-id="inst_hash_160774275">
+<td class="wordwrap"><a href="mod0_1.html#inst_tag_23" id="tag_urg_inst_23">a1_addrd_r</a></td>
+<td class="s8 cl rt"> 87.78</td>
+<td class="s10 cl rt">100.00</td>
+<td class="wht cl rt"></td>
+<td class="s9 cl rt"> 96.67</td>
+<td class="wht cl rt"></td>
+<td class="s6 cl rt"> 66.67</td>
+    </tr>
+    <tr data-tt-id="inst_hash_113941219" data-tt-parent-id="inst_hash_160774275">
+<td class="wordwrap"><a href="mod0_1.html#inst_tag_24" id="tag_urg_inst_24">a2_addrd_r</a></td>
+<td class="s8 cl rt"> 87.78</td>
+<td class="s10 cl rt">100.00</td>
+<td class="wht cl rt"></td>
+<td class="s9 cl rt"> 96.67</td>
+<td class="wht cl rt"></td>
+<td class="s6 cl rt"> 66.67</td>
+    </tr>
+    <tr data-tt-id="inst_hash_808742364" data-tt-parent-id="inst_hash_160774275">
+<td class="wordwrap"><a href="mod0_1.html#inst_tag_25" id="tag_urg_inst_25">a3_addrd_r</a></td>
+<td class="s8 cl rt"> 87.78</td>
+<td class="s10 cl rt">100.00</td>
+<td class="wht cl rt"></td>
+<td class="s9 cl rt"> 96.67</td>
+<td class="wht cl rt"></td>
+<td class="s6 cl rt"> 66.67</td>
+    </tr>
+    <tr data-tt-id="inst_hash_1731425947" data-tt-parent-id="inst_hash_160774275">
+<td class="wordwrap"><a href="mod0_1.html#inst_tag_26" id="tag_urg_inst_26">a4_addrd_r</a></td>
+<td class="s8 cl rt"> 87.78</td>
+<td class="s10 cl rt">100.00</td>
+<td class="wht cl rt"></td>
+<td class="s9 cl rt"> 96.67</td>
+<td class="wht cl rt"></td>
+<td class="s6 cl rt"> 66.67</td>
+    </tr>
+    <tr data-tt-id="inst_hash_1640857766" data-tt-parent-id="inst_hash_160774275">
+<td class="wordwrap"><a href="mod0_1.html#inst_tag_27" id="tag_urg_inst_27">a5_addrd_r</a></td>
+<td class="s8 cl rt"> 87.78</td>
+<td class="s10 cl rt">100.00</td>
+<td class="wht cl rt"></td>
+<td class="s9 cl rt"> 96.67</td>
+<td class="wht cl rt"></td>
+<td class="s6 cl rt"> 66.67</td>
+    </tr>
+    <tr data-tt-id="inst_hash_718174183" data-tt-parent-id="inst_hash_160774275">
+<td class="wordwrap"><a href="mod0_1.html#inst_tag_28" id="tag_urg_inst_28">a6_addrd_r</a></td>
+<td class="s8 cl rt"> 87.78</td>
+<td class="s10 cl rt">100.00</td>
+<td class="wht cl rt"></td>
+<td class="s9 cl rt"> 96.67</td>
+<td class="wht cl rt"></td>
+<td class="s6 cl rt"> 66.67</td>
+    </tr>
+    <tr data-tt-id="inst_hash_204509400" data-tt-parent-id="inst_hash_160774275">
+<td class="wordwrap"><a href="mod0_1.html#inst_tag_29" id="tag_urg_inst_29">a7_addrd_r</a></td>
+<td class="s8 cl rt"> 87.78</td>
+<td class="s10 cl rt">100.00</td>
+<td class="wht cl rt"></td>
+<td class="s9 cl rt"> 96.67</td>
+<td class="wht cl rt"></td>
+<td class="s6 cl rt"> 66.67</td>
+    </tr>
+    <tr data-tt-id="inst_hash_1127192983" data-tt-parent-id="inst_hash_160774275">
+<td class="wordwrap"><a href="mod0_1.html#inst_tag_30" id="tag_urg_inst_30">a8_addrd_r</a></td>
+<td class="s8 cl rt"> 87.78</td>
+<td class="s10 cl rt">100.00</td>
+<td class="wht cl rt"></td>
+<td class="s9 cl rt"> 96.67</td>
+<td class="wht cl rt"></td>
+<td class="s6 cl rt"> 66.67</td>
+    </tr>
+    <tr data-tt-id="inst_hash_2049876566" data-tt-parent-id="inst_hash_160774275">
+<td class="wordwrap"><a href="mod0_1.html#inst_tag_31" id="tag_urg_inst_31">a9_addrd_r</a></td>
+<td class="s8 cl rt"> 87.78</td>
+<td class="s10 cl rt">100.00</td>
+<td class="wht cl rt"></td>
+<td class="s9 cl rt"> 96.67</td>
+<td class="wht cl rt"></td>
+<td class="s6 cl rt"> 66.67</td>
+    </tr>
+    <tr data-tt-id="inst_hash_860602111" data-tt-parent-id="inst_hash_160774275">
+<td class="wordwrap"><a href="mod0_2.html#inst_tag_46" id="tag_urg_inst_46">amem</a></td>
+<td class="s8 cl rt"> 87.78</td>
+<td class="s10 cl rt">100.00</td>
+<td class="wht cl rt"></td>
+<td class="s9 cl rt"> 96.67</td>
+<td class="wht cl rt"></td>
+<td class="s6 cl rt"> 66.67</td>
+    </tr>
+    <tr data-tt-id="inst_hash_1625538495" data-tt-parent-id="inst_hash_160774275">
+<td class="wordwrap"><a href="mod0_1.html#inst_tag_32" id="tag_urg_inst_32">b1_addrd_r</a></td>
+<td class="s8 cl rt"> 87.50</td>
+<td class="s10 cl rt">100.00</td>
+<td class="wht cl rt"></td>
+<td class="s9 cl rt"> 95.83</td>
+<td class="wht cl rt"></td>
+<td class="s6 cl rt"> 66.67</td>
+    </tr>
+    <tr data-tt-id="inst_hash_1746745218" data-tt-parent-id="inst_hash_160774275">
+<td class="wordwrap"><a href="mod0_1.html#inst_tag_33" id="tag_urg_inst_33">b2_addrd_r</a></td>
+<td class="s8 cl rt"> 87.50</td>
+<td class="s10 cl rt">100.00</td>
+<td class="wht cl rt"></td>
+<td class="s9 cl rt"> 95.83</td>
+<td class="wht cl rt"></td>
+<td class="s6 cl rt"> 66.67</td>
+    </tr>
+    <tr data-tt-id="inst_hash_824061635" data-tt-parent-id="inst_hash_160774275">
+<td class="wordwrap"><a href="mod0_1.html#inst_tag_34" id="tag_urg_inst_34">b3_addrd_r</a></td>
+<td class="s8 cl rt"> 87.50</td>
+<td class="s10 cl rt">100.00</td>
+<td class="wht cl rt"></td>
+<td class="s9 cl rt"> 95.83</td>
+<td class="wht cl rt"></td>
+<td class="s6 cl rt"> 66.67</td>
+    </tr>
+    <tr data-tt-id="inst_hash_98621948" data-tt-parent-id="inst_hash_160774275">
+<td class="wordwrap"><a href="mod0_1.html#inst_tag_35" id="tag_urg_inst_35">b4_addrd_r</a></td>
+<td class="s8 cl rt"> 87.50</td>
+<td class="s10 cl rt">100.00</td>
+<td class="wht cl rt"></td>
+<td class="s9 cl rt"> 95.83</td>
+<td class="wht cl rt"></td>
+<td class="s6 cl rt"> 66.67</td>
+    </tr>
+    <tr data-tt-id="inst_hash_1021305531" data-tt-parent-id="inst_hash_160774275">
+<td class="wordwrap"><a href="mod0_1.html#inst_tag_36" id="tag_urg_inst_36">b5_addrd_r</a></td>
+<td class="s8 cl rt"> 87.50</td>
+<td class="s10 cl rt">100.00</td>
+<td class="wht cl rt"></td>
+<td class="s9 cl rt"> 95.83</td>
+<td class="wht cl rt"></td>
+<td class="s6 cl rt"> 66.67</td>
+    </tr>
+    <tr data-tt-id="inst_hash_1943989114" data-tt-parent-id="inst_hash_160774275">
+<td class="wordwrap"><a href="mod0_1.html#inst_tag_37" id="tag_urg_inst_37">b6_addrd_r</a></td>
+<td class="s8 cl rt"> 87.50</td>
+<td class="s10 cl rt">100.00</td>
+<td class="wht cl rt"></td>
+<td class="s9 cl rt"> 95.83</td>
+<td class="wht cl rt"></td>
+<td class="s6 cl rt"> 66.67</td>
+    </tr>
+    <tr data-tt-id="inst_hash_1428294599" data-tt-parent-id="inst_hash_160774275">
+<td class="wordwrap"><a href="mod0_1.html#inst_tag_38" id="tag_urg_inst_38">b7_addrd_r</a></td>
+<td class="s8 cl rt"> 87.50</td>
+<td class="s10 cl rt">100.00</td>
+<td class="wht cl rt"></td>
+<td class="s9 cl rt"> 95.83</td>
+<td class="wht cl rt"></td>
+<td class="s6 cl rt"> 66.67</td>
+    </tr>
+    <tr data-tt-id="inst_hash_505611016" data-tt-parent-id="inst_hash_160774275">
+<td class="wordwrap"><a href="mod0_1.html#inst_tag_39" id="tag_urg_inst_39">b8_addrd_r</a></td>
+<td class="s8 cl rt"> 87.50</td>
+<td class="s10 cl rt">100.00</td>
+<td class="wht cl rt"></td>
+<td class="s9 cl rt"> 95.83</td>
+<td class="wht cl rt"></td>
+<td class="s6 cl rt"> 66.67</td>
+    </tr>
+    <tr data-tt-id="inst_hash_417072567" data-tt-parent-id="inst_hash_160774275">
+<td class="wordwrap"><a href="mod0_1.html#inst_tag_40" id="tag_urg_inst_40">b9_addrd_r</a></td>
+<td class="s8 cl rt"> 87.50</td>
+<td class="s10 cl rt">100.00</td>
+<td class="wht cl rt"></td>
+<td class="s9 cl rt"> 95.83</td>
+<td class="wht cl rt"></td>
+<td class="s6 cl rt"> 66.67</td>
+    </tr>
+    <tr data-tt-id="inst_hash_1801561186" data-tt-parent-id="inst_hash_160774275">
+<td class="wordwrap"><a href="mod0_2.html#inst_tag_47" id="tag_urg_inst_47">bmem</a></td>
+<td class="s8 cl rt"> 87.50</td>
+<td class="s10 cl rt">100.00</td>
+<td class="wht cl rt"></td>
+<td class="s9 cl rt"> 95.83</td>
+<td class="wht cl rt"></td>
+<td class="s6 cl rt"> 66.67</td>
+    </tr>
+    <tr data-tt-id="inst_hash_641487879" data-tt-parent-id="inst_hash_160774275">
+<td class="wordwrap"><a href="mod0_0.html#inst_tag_21" id="tag_urg_inst_21">ch_in_r</a></td>
+<td class="s6 cl rt"> 69.53</td>
+<td class="s10 cl rt">100.00</td>
+<td class="wht cl rt"></td>
+<td class="s0 cl rt">  8.59</td>
+<td class="wht cl rt"></td>
+<td class="s10 cl rt">100.00</td>
+    </tr>
+    <tr data-tt-id="inst_hash_1951268078" data-tt-parent-id="inst_hash_160774275">
+<td class="wordwrap"><a href="mod0_1.html#inst_tag_22" id="tag_urg_inst_22">ch_out_r</a></td>
+<td class="s7 cl rt"> 72.56</td>
+<td class="s10 cl rt">100.00</td>
+<td class="wht cl rt"></td>
+<td class="s1 cl rt"> 17.68</td>
+<td class="wht cl rt"></td>
+<td class="s10 cl rt">100.00</td>
+    </tr>
+    <tr data-tt-id="inst_hash_1696156601" data-tt-parent-id="inst_hash_160774275">
+<td class="wordwrap"><a href="mod0_2.html#inst_tag_48" id="tag_urg_inst_48">initcount_r</a></td>
+<td class="s8 cl rt"> 86.51</td>
+<td class="s10 cl rt">100.00</td>
+<td class="wht cl rt"></td>
+<td class="s9 cl rt"> 92.86</td>
+<td class="wht cl rt"></td>
+<td class="s6 cl rt"> 66.67</td>
+    </tr>
+    <tr data-tt-id="inst_hash_1603714923" data-tt-parent-id="inst_hash_160774275">
+<td class="wordwrap"><a href="mod0_2.html#inst_tag_45" id="tag_urg_inst_45">output_ch_r</a></td>
+<td class="s7 cl rt"> 72.56</td>
+<td class="s10 cl rt">100.00</td>
+<td class="wht cl rt"></td>
+<td class="s1 cl rt"> 17.68</td>
+<td class="wht cl rt"></td>
+<td class="s10 cl rt">100.00</td>
+    </tr>
+    <tr data-tt-id="inst_hash_1952225935" data-tt-parent-id="inst_hash_160774275">
+<td class="wordwrap"><a href="mod0_1.html#inst_tag_42" id="tag_urg_inst_42">output_valid_reg_r</a></td>
+<td class="s8 cl rt"> 80.56</td>
+<td class="s10 cl rt">100.00</td>
+<td class="wht cl rt"></td>
+<td class="s7 cl rt"> 75.00</td>
+<td class="wht cl rt"></td>
+<td class="s6 cl rt"> 66.67</td>
+    </tr>
+    <tr data-tt-id="inst_hash_969278440" data-tt-parent-id="inst_hash_160774275">
+<td class="wordwrap"><a href="mod0_1.html#inst_tag_43" id="tag_urg_inst_43">output_x_r</a></td>
+<td class="s7 cl rt"> 73.23</td>
+<td class="s10 cl rt">100.00</td>
+<td class="wht cl rt"></td>
+<td class="s1 cl rt"> 19.70</td>
+<td class="wht cl rt"></td>
+<td class="s10 cl rt">100.00</td>
+    </tr>
+    <tr data-tt-id="inst_hash_1624948377" data-tt-parent-id="inst_hash_160774275">
+<td class="wordwrap"><a href="mod0_2.html#inst_tag_44" id="tag_urg_inst_44">output_y_r</a></td>
+<td class="s7 cl rt"> 73.57</td>
+<td class="s10 cl rt">100.00</td>
+<td class="wht cl rt"></td>
+<td class="s2 cl rt"> 20.71</td>
+<td class="wht cl rt"></td>
+<td class="s10 cl rt">100.00</td>
+    </tr>
+    <tr data-tt-id="inst_hash_2070947864" data-tt-parent-id="inst_hash_160774275">
+<td class="wordwrap"><a href="mod0_1.html#inst_tag_41" id="tag_urg_inst_41">prev_ch_out_r</a></td>
+<td class="s7 cl rt"> 72.56</td>
+<td class="s10 cl rt">100.00</td>
+<td class="wht cl rt"></td>
+<td class="s1 cl rt"> 17.68</td>
+<td class="wht cl rt"></td>
+<td class="s10 cl rt">100.00</td>
+    </tr>
+    <tr data-tt-id="inst_hash_2147301280" data-tt-parent-id="inst_hash_160774275">
+<td class="wordwrap"><a href="mod0_0.html#inst_tag_19" id="tag_urg_inst_19">x_r</a></td>
+<td class="s7 cl rt"> 73.57</td>
+<td class="s10 cl rt">100.00</td>
+<td class="wht cl rt"></td>
+<td class="s2 cl rt"> 20.71</td>
+<td class="wht cl rt"></td>
+<td class="s10 cl rt">100.00</td>
+    </tr>
+    <tr data-tt-id="inst_hash_514862017" data-tt-parent-id="inst_hash_160774275">
+<td class="wordwrap"><a href="mod0_0.html#inst_tag_20" id="tag_urg_inst_20">y_r</a></td>
+<td class="s7 cl rt"> 73.57</td>
+<td class="s10 cl rt">100.00</td>
+<td class="wht cl rt"></td>
+<td class="s2 cl rt"> 20.71</td>
+<td class="wht cl rt"></td>
+<td class="s10 cl rt">100.00</td>
+    </tr>
+    <tr data-tt-id="inst_hash_632275088" data-tt-parent-id="inst_hash_1764133383">
+<td class="wordwrap"><a href="mod2.html#inst_tag_64" id="tag_urg_inst_64">fifo_unit</a></td>
+<td class="s9 cl rt"> 91.68</td>
+<td class="s9 cl rt"> 93.33</td>
+<td class="s8 cl rt"> 87.50</td>
+<td class="s9 cl rt"> 97.65</td>
+<td class="wht cl rt"></td>
+<td class="s8 cl rt"> 88.24</td>
+    </tr>
+    <tr data-tt-id="inst_hash_550238944" data-tt-parent-id="inst_hash_632275088">
+<td class="wordwrap"><a href="mod11.html#inst_tag_74" id="tag_urg_inst_74">fifo_mem</a></td>
+<td class="s9 cl rt"> 91.88</td>
+<td class="s8 cl rt"> 85.71</td>
+<td class="s10 cl rt">100.00</td>
+<td class="s10 cl rt">100.00</td>
+<td class="wht cl rt"></td>
+<td class="s8 cl rt"> 81.82</td>
+    </tr>
+    <tr data-tt-id="inst_hash_1021650833" data-tt-parent-id="inst_hash_632275088">
+<td class="wordwrap"><a href="mod0_2.html#inst_tag_58" id="tag_urg_inst_58">read_addr_r</a></td>
+<td class="s9 cl rt"> 99.07</td>
+<td class="s10 cl rt">100.00</td>
+<td class="wht cl rt"></td>
+<td class="s9 cl rt"> 97.22</td>
+<td class="wht cl rt"></td>
+<td class="s10 cl rt">100.00</td>
+    </tr>
+    <tr data-tt-id="inst_hash_1326637122" data-tt-parent-id="inst_hash_632275088">
+<td class="wordwrap"><a href="mod0_2.html#inst_tag_57" id="tag_urg_inst_57">write_addr_r</a></td>
+<td class="s9 cl rt"> 99.07</td>
+<td class="s10 cl rt">100.00</td>
+<td class="wht cl rt"></td>
+<td class="s9 cl rt"> 97.22</td>
+<td class="wht cl rt"></td>
+<td class="s10 cl rt">100.00</td>
+    </tr>
+    <tr data-tt-id="inst_hash_31745701" data-tt-parent-id="inst_hash_1764133383">
+<td class="wordwrap"><a href="mod10.html#inst_tag_73" id="tag_urg_inst_73">mac_unit</a></td>
+<td class="s9 cl rt"> 95.45</td>
+<td class="s8 cl rt"> 84.67</td>
+<td class="s10 cl rt">100.00</td>
+<td class="s9 cl rt"> 97.11</td>
+<td class="wht cl rt"></td>
+<td class="s10 cl rt">100.00</td>
+    </tr>
+    <tr data-tt-id="inst_hash_2125848480" data-tt-parent-id="inst_hash_31745701">
+<td class="wordwrap"><a href="mod1.html#inst_tag_59" id="tag_urg_inst_59">add_1</a></td>
+<td class="s9 cl rt"> 90.00</td>
+<td class="s8 cl rt"> 80.00</td>
+<td class="wht cl rt"></td>
+<td class="s10 cl rt">100.00</td>
+<td class="wht cl rt"></td>
+<td class="wht cl rt"></td>
+    </tr>
+    <tr data-tt-id="inst_hash_707538817" data-tt-parent-id="inst_hash_31745701">
+<td class="wordwrap"><a href="mod1.html#inst_tag_60" id="tag_urg_inst_60">add_2</a></td>
+<td class="s9 cl rt"> 90.00</td>
+<td class="s8 cl rt"> 80.00</td>
+<td class="wht cl rt"></td>
+<td class="s10 cl rt">100.00</td>
+<td class="wht cl rt"></td>
+<td class="wht cl rt"></td>
+    </tr>
+    <tr data-tt-id="inst_hash_754041182" data-tt-parent-id="inst_hash_31745701">
+<td class="wordwrap"><a href="mod1.html#inst_tag_61" id="tag_urg_inst_61">add_3</a></td>
+<td class="s9 cl rt"> 90.00</td>
+<td class="s8 cl rt"> 80.00</td>
+<td class="wht cl rt"></td>
+<td class="s10 cl rt">100.00</td>
+<td class="wht cl rt"></td>
+<td class="wht cl rt"></td>
+    </tr>
+    <tr data-tt-id="inst_hash_2079346115" data-tt-parent-id="inst_hash_31745701">
+<td class="wordwrap"><a href="mod1.html#inst_tag_62" id="tag_urg_inst_62">add_4</a></td>
+<td class="s9 cl rt"> 90.00</td>
+<td class="s8 cl rt"> 80.00</td>
+<td class="wht cl rt"></td>
+<td class="s10 cl rt">100.00</td>
+<td class="wht cl rt"></td>
+<td class="wht cl rt"></td>
+    </tr>
+    <tr data-tt-id="inst_hash_617766116" data-tt-parent-id="inst_hash_31745701">
+<td class="wordwrap"><a href="mod1.html#inst_tag_63" id="tag_urg_inst_63">add_5</a></td>
+<td class="s8 cl rt"> 80.00</td>
+<td class="s8 cl rt"> 80.00</td>
+<td class="wht cl rt"></td>
+<td class="s8 cl rt"> 80.00</td>
+<td class="wht cl rt"></td>
+<td class="wht cl rt"></td>
+    </tr>
+    <tr data-tt-id="inst_hash_1248228509" data-tt-parent-id="inst_hash_31745701">
+<td class="wordwrap"><a href="mod12.html#inst_tag_75" id="tag_urg_inst_75">mul_1</a></td>
+<td class="s9 cl rt"> 90.00</td>
+<td class="s8 cl rt"> 80.00</td>
+<td class="wht cl rt"></td>
+<td class="s10 cl rt">100.00</td>
+<td class="wht cl rt"></td>
+<td class="wht cl rt"></td>
+    </tr>
+    <tr data-tt-id="inst_hash_1585158788" data-tt-parent-id="inst_hash_31745701">
+<td class="wordwrap"><a href="mod12.html#inst_tag_76" id="tag_urg_inst_76">mul_2</a></td>
+<td class="s9 cl rt"> 90.00</td>
+<td class="s8 cl rt"> 80.00</td>
+<td class="wht cl rt"></td>
+<td class="s10 cl rt">100.00</td>
+<td class="wht cl rt"></td>
+<td class="wht cl rt"></td>
+    </tr>
+    <tr data-tt-id="inst_hash_123578789" data-tt-parent-id="inst_hash_31745701">
+<td class="wordwrap"><a href="mod12.html#inst_tag_77" id="tag_urg_inst_77">mul_3</a></td>
+<td class="s9 cl rt"> 90.00</td>
+<td class="s8 cl rt"> 80.00</td>
+<td class="wht cl rt"></td>
+<td class="s10 cl rt">100.00</td>
+<td class="wht cl rt"></td>
+<td class="wht cl rt"></td>
+    </tr>
+    <tr data-tt-id="inst_hash_1338001210" data-tt-parent-id="inst_hash_31745701">
+<td class="wordwrap"><a href="mod12.html#inst_tag_78" id="tag_urg_inst_78">mul_4</a></td>
+<td class="s9 cl rt"> 90.00</td>
+<td class="s8 cl rt"> 80.00</td>
+<td class="wht cl rt"></td>
+<td class="s10 cl rt">100.00</td>
+<td class="wht cl rt"></td>
+<td class="wht cl rt"></td>
+    </tr>
+    <tr data-tt-id="inst_hash_1495386087" data-tt-parent-id="inst_hash_31745701">
+<td class="wordwrap"><a href="mod12.html#inst_tag_79" id="tag_urg_inst_79">mul_5</a></td>
+<td class="s9 cl rt"> 90.00</td>
+<td class="s8 cl rt"> 80.00</td>
+<td class="wht cl rt"></td>
+<td class="s10 cl rt">100.00</td>
+<td class="wht cl rt"></td>
+<td class="wht cl rt"></td>
+    </tr>
+    <tr data-tt-id="inst_hash_33806088" data-tt-parent-id="inst_hash_31745701">
+<td class="wordwrap"><a href="mod12.html#inst_tag_80" id="tag_urg_inst_80">mul_6</a></td>
+<td class="s9 cl rt"> 90.00</td>
+<td class="s8 cl rt"> 80.00</td>
+<td class="wht cl rt"></td>
+<td class="s10 cl rt">100.00</td>
+<td class="wht cl rt"></td>
+<td class="wht cl rt"></td>
+    </tr>
+    <tr data-tt-id="inst_hash_1427773911" data-tt-parent-id="inst_hash_31745701">
+<td class="wordwrap"><a href="mod12.html#inst_tag_81" id="tag_urg_inst_81">mul_7</a></td>
+<td class="s9 cl rt"> 90.00</td>
+<td class="s8 cl rt"> 80.00</td>
+<td class="wht cl rt"></td>
+<td class="s10 cl rt">100.00</td>
+<td class="wht cl rt"></td>
+<td class="wht cl rt"></td>
+    </tr>
+    <tr data-tt-id="inst_hash_1405613386" data-tt-parent-id="inst_hash_31745701">
+<td class="wordwrap"><a href="mod12.html#inst_tag_82" id="tag_urg_inst_82">mul_8</a></td>
+<td class="s9 cl rt"> 90.00</td>
+<td class="s8 cl rt"> 80.00</td>
+<td class="wht cl rt"></td>
+<td class="s10 cl rt">100.00</td>
+<td class="wht cl rt"></td>
+<td class="wht cl rt"></td>
+    </tr>
+    <tr data-tt-id="inst_hash_55966613" data-tt-parent-id="inst_hash_31745701">
+<td class="wordwrap"><a href="mod12.html#inst_tag_83" id="tag_urg_inst_83">mul_9</a></td>
+<td class="s9 cl rt"> 90.00</td>
+<td class="s8 cl rt"> 80.00</td>
+<td class="wht cl rt"></td>
+<td class="s10 cl rt">100.00</td>
+<td class="wht cl rt"></td>
+<td class="wht cl rt"></td>
+    </tr>
+    <tr data-tt-id="inst_hash_385227654" data-tt-parent-id="inst_hash_31745701">
+<td class="wordwrap"><a href="mod0_2.html#inst_tag_49" id="tag_urg_inst_49">reg_1_r</a></td>
+<td class="s9 cl rt"> 99.83</td>
+<td class="s10 cl rt">100.00</td>
+<td class="wht cl rt"></td>
+<td class="s9 cl rt"> 99.49</td>
+<td class="wht cl rt"></td>
+<td class="s10 cl rt">100.00</td>
+    </tr>
+    <tr data-tt-id="inst_hash_1076352345" data-tt-parent-id="inst_hash_31745701">
+<td class="wordwrap"><a href="mod0_2.html#inst_tag_50" id="tag_urg_inst_50">reg_2_r</a></td>
+<td class="s9 cl rt"> 99.83</td>
+<td class="s10 cl rt">100.00</td>
+<td class="wht cl rt"></td>
+<td class="s9 cl rt"> 99.49</td>
+<td class="wht cl rt"></td>
+<td class="s10 cl rt">100.00</td>
+    </tr>
+    <tr data-tt-id="inst_hash_1757034952" data-tt-parent-id="inst_hash_31745701">
+<td class="wordwrap"><a href="mod0_2.html#inst_tag_51" id="tag_urg_inst_51">reg_3_r</a></td>
+<td class="s9 cl rt"> 99.83</td>
+<td class="s10 cl rt">100.00</td>
+<td class="wht cl rt"></td>
+<td class="s9 cl rt"> 99.49</td>
+<td class="wht cl rt"></td>
+<td class="s10 cl rt">100.00</td>
+    </tr>
+    <tr data-tt-id="inst_hash_295454953" data-tt-parent-id="inst_hash_31745701">
+<td class="wordwrap"><a href="mod0_2.html#inst_tag_52" id="tag_urg_inst_52">reg_4_r</a></td>
+<td class="s9 cl rt"> 99.83</td>
+<td class="s10 cl rt">100.00</td>
+<td class="wht cl rt"></td>
+<td class="s9 cl rt"> 99.49</td>
+<td class="wht cl rt"></td>
+<td class="s10 cl rt">100.00</td>
+    </tr>
+    <tr data-tt-id="inst_hash_1166125046" data-tt-parent-id="inst_hash_31745701">
+<td class="wordwrap"><a href="mod0_2.html#inst_tag_53" id="tag_urg_inst_53">reg_5_r</a></td>
+<td class="s9 cl rt"> 99.83</td>
+<td class="s10 cl rt">100.00</td>
+<td class="wht cl rt"></td>
+<td class="s9 cl rt"> 99.49</td>
+<td class="wht cl rt"></td>
+<td class="s10 cl rt">100.00</td>
+    </tr>
+    <tr data-tt-id="inst_hash_1667262251" data-tt-parent-id="inst_hash_31745701">
+<td class="wordwrap"><a href="mod0_2.html#inst_tag_54" id="tag_urg_inst_54">reg_6_r</a></td>
+<td class="s8 cl rt"> 83.67</td>
+<td class="s10 cl rt">100.00</td>
+<td class="wht cl rt"></td>
+<td class="s5 cl rt"> 51.01</td>
+<td class="wht cl rt"></td>
+<td class="s10 cl rt">100.00</td>
+    </tr>
+    <tr data-tt-id="inst_hash_205682252" data-tt-parent-id="inst_hash_31745701">
+<td class="wordwrap"><a href="mod0_2.html#inst_tag_55" id="tag_urg_inst_55">reg_7_r</a></td>
+<td class="s9 cl rt"> 99.83</td>
+<td class="s10 cl rt">100.00</td>
+<td class="wht cl rt"></td>
+<td class="s9 cl rt"> 99.49</td>
+<td class="wht cl rt"></td>
+<td class="s10 cl rt">100.00</td>
+    </tr>
+    <tr data-tt-id="inst_hash_1255897747" data-tt-parent-id="inst_hash_31745701">
+<td class="wordwrap"><a href="mod0_2.html#inst_tag_56" id="tag_urg_inst_56">reg_8_r</a></td>
+<td class="s9 cl rt"> 99.83</td>
+<td class="s10 cl rt">100.00</td>
+<td class="wht cl rt"></td>
+<td class="s9 cl rt"> 99.49</td>
+<td class="wht cl rt"></td>
+<td class="s10 cl rt">100.00</td>
+    </tr>
+    <tr data-tt-id="inst_hash_1801344362" data-tt-parent-id="inst_hash_1764133383">
+<td class="wordwrap"><a href="mod9.html#inst_tag_71" id="tag_urg_inst_71">memory_a</a></td>
+<td class="s9 cl rt"> 97.17</td>
+<td class="s9 cl rt"> 93.33</td>
+<td class="s10 cl rt">100.00</td>
+<td class="s10 cl rt">100.00</td>
+<td class="wht cl rt"></td>
+<td class="s9 cl rt"> 95.35</td>
+    </tr>
+    <tr data-tt-id="inst_hash_775852363" data-tt-parent-id="inst_hash_1764133383">
+<td class="wordwrap"><a href="mod9.html#inst_tag_72" id="tag_urg_inst_72">memory_b</a></td>
+<td class="s9 cl rt"> 97.17</td>
+<td class="s9 cl rt"> 93.33</td>
+<td class="s10 cl rt">100.00</td>
+<td class="s10 cl rt">100.00</td>
+<td class="wht cl rt"></td>
+<td class="s9 cl rt"> 95.35</td>
+    </tr>
+    <tr data-tt-id="inst_hash_248474280" data-tt-parent-id="inst_hash_1764133383">
+<td class="wordwrap"><a href="mod0_0.html#inst_tag_18" id="tag_urg_inst_18">reg_out_test_r</a></td>
+<td class="s8 cl rt"> 87.91</td>
+<td class="s10 cl rt">100.00</td>
+<td class="wht cl rt"></td>
+<td class="s9 cl rt"> 97.06</td>
+<td class="wht cl rt"></td>
+<td class="s6 cl rt"> 66.67</td>
+    </tr>
+    <tr data-tt-id="inst_hash_362846947" data-tt-parent-id="inst_hash_1805348626">
+<td class="wordwrap"><a href="mod7.html#inst_tag_69" id="tag_urg_inst_69">intf_i</a></td>
+<td class="s9 cl rt"> 90.29</td>
+<td class="s10 cl rt">100.00</td>
+<td class="s6 cl rt"> 62.50</td>
+<td class="s9 cl rt"> 98.65</td>
+<td class="wht cl rt"></td>
+<td class="s10 cl rt">100.00</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+<div class="ui-layout-south">
+<table align=center><tr><td class="s0 cl">0%</td>
+<td class="s1 cl">10%</td>
+<td class="s2 cl">20%</td>
+<td class="s3 cl">30%</td>
+<td class="s4 cl">40%</td>
+<td class="s5 cl">50%</td>
+<td class="s6 cl">60%</td>
+<td class="s7 cl">70%</td>
+<td class="s8 cl">80%</td>
+<td class="s9 cl">90%</td>
+<td class="s10 cl">100%</td></tr></table></div>
+
+<script>
+$("#hierarchyTable").treetable({ expandable: true });
+</script>
+</body>
+</html>
